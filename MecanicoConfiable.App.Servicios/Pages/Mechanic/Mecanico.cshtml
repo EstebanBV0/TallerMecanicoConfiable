@@ -1,0 +1,36 @@
+@page 
+@model MecanicoModel
+@{
+    ViewData["Title"] = "Mecanico";
+}
+
+
+
+<form method="post" id = "adminAgregarmecanico" class="mt-5 mb-3 formuadmin"  >
+ <h2>Agregando profesional </h2>
+
+    <div class="formularioc">
+        <div class="mt-5 mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input asp-for="Mecanico.Nombre" type="nombre" class="form-control form-control-sm" id="nombre"  />
+        </div>
+        <div class="mb-3">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input asp-for="Mecanico.Apellido"  class="form-control form-control-sm" id="apellido"  />
+        </div>
+         <div class="mb-3">
+            <label asp-for="Mecanico.NivelEstudio" class="form-label"> Nivel academico</label>
+            <select asp-for="Mecanico.NivelEstudio" class="form-control">
+                <option value="" disabled="" selected=""></option>
+                <option value="Técnico">Técnico</option>
+                <option value="Técnologo">Técnologo</option>
+                <option value="Profesional">Profesional</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="Mecanico.Direccion" class="form-label">Direccion</label>
+            <input asp-for="Mecanico.Direccion" class="form-control form-control-sm" id="Direccion"   />
+          </div>
+            <button type="submit" class = "btn btn-primary">Guardar</button>  
+    </div>
+</form>

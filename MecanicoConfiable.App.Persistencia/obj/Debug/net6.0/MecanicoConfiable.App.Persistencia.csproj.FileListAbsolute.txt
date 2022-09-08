@@ -1,0 +1,17 @@
+C:\Users\esbv1\OneDrive\Escritorio\C#\Tallermecanico\TallerMecanicoConfiable\MecanicoConfiable.App\MecanicoConfiable.App.Persistencia\obj\Debug\net6.0\MecanicoConfiable.App.Persistencia.csproj.AssemblyReference.cache
+C:\Users\esbv1\OneDrive\Escritorio\C#\Tallermecanico\TallerMecanicoConfiable\MecanicoConfiable.App\MecanicoConfiable.App.Persistencia\obj\Debug\net6.0\MecanicoConfiable.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\esbv1\OneDrive\Escritorio\C#\Tallermecanico\TallerMecanicoConfiable\MecanicoConfiable.App\MecanicoConfiable.App.Persistencia\obj\Debug\net6.0\MecanicoConfiable.App.Persistencia.AssemblyInfoInputs.cache
+C:\Users\esbv1\OneDrive\Escritorio\C#\Tallermecanico\TallerMecanicoConfiable\MecanicoConfiable.App\MecanicoConfiable.App.Persistencia\obj\Debug\net6.0\MecanicoConfiable.App.Persistencia.AssemblyInfo.cs
+C:\Users\esbv1\OneDrive\Escritorio\C#\Tallermecanico\TallerMecanicoConfiable\MecanicoConfiable.App\MecanicoConfiable.App.Persistencia\obj\Debug\net6.0\MecanicoConfiable.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\esbv1\OneDrive\Escritorio\C#\Tallermecanico\TallerMecanicoConfiable\MecanicoConfiable.App\MecanicoConfiable.App.Persistencia\bin\Debug\net6.0\MecanicoConfiable.App.Persistencia.deps.json
+C:\Users\esbv1\OneDrive\Escritorio\C#\Tallermecanico\TallerMecanicoConfiable\MecanicoConfiable.App\MecanicoConfiable.App.Persistencia\bin\Debug\net6.0\MecanicoConfiable.App.Persistencia.runtimeconfig.json
+C:\Users\esbv1\OneDrive\Escritorio\C#\Tallermecanico\TallerMecanicoConfiable\MecanicoConfiable.App\MecanicoConfiable.App.Persistencia\bin\Debug\net6.0\MecanicoConfiable.App.Persistencia.dll
+C:\Users\esbv1\OneDrive\Escritorio\C#\Tallermecanico\TallerMecanicoConfiable\MecanicoConfiable.App\MecanicoConfiable.App.Persistencia\bin\Debug\net6.0\MecanicoConfiable.App.Persistencia.pdb
+C:\Users\esbv1\OneDrive\Escritorio\C#\Tallermecanico\TallerMecanicoConfiable\MecanicoConfiable.App\MecanicoConfiable.App.Persistencia\bin\Debug\net6.0\MecanicoConfiable.App.Dominio.dll
+C:\Users\esbv1\OneDrive\Escritorio\C#\Tallermecanico\TallerMecanicoConfiable\MecanicoConfiable.App\MecanicoConfiable.App.Persistencia\bin\Debug\net6.0\MecanicoConfiable.App.Dominio.pdb
+C:\Users\esbv1\OneDrive\Escritorio\C#\Tallermecanico\TallerMecanicoConfiable\MecanicoConfiable.App\MecanicoConfiable.App.Persistencia\obj\Debug\net6.0\MecanicoConfiable.App.Persistencia.csproj.CopyComplete
+C:\Users\esbv1\OneDrive\Escritorio\C#\Tallermecanico\TallerMecanicoConfiable\MecanicoConfiable.App\MecanicoConfiable.App.Persistencia\obj\Debug\net6.0\MecanicoConfiable.App.Persistencia.dll
+C:\Users\esbv1\OneDrive\Escritorio\C#\Tallermecanico\TallerMecanicoConfiable\MecanicoConfiable.App\MecanicoConfiable.App.Persistencia\obj\Debug\net6.0\refint\MecanicoConfiable.App.Persistencia.dll
+C:\Users\esbv1\OneDrive\Escritorio\C#\Tallermecanico\TallerMecanicoConfiable\MecanicoConfiable.App\MecanicoConfiable.App.Persistencia\obj\Debug\net6.0\MecanicoConfiable.App.Persistencia.pdb
+C:\Users\esbv1\OneDrive\Escritorio\C#\Tallermecanico\TallerMecanicoConfiable\MecanicoConfiable.App\MecanicoConfiable.App.Persistencia\obj\Debug\net6.0\MecanicoConfiable.App.Persistencia.genruntimeconfig.cache
+C:\Users\esbv1\OneDrive\Escritorio\C#\Tallermecanico\TallerMecanicoConfiable\MecanicoConfiable.App\MecanicoConfiable.App.Persistencia\obj\Debug\net6.0\ref\MecanicoConfiable.App.Persistencia.dll
