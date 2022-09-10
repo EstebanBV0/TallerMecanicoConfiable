@@ -18,6 +18,10 @@
             <label for="apellido" class="form-label">Apellido</label>
             <input asp-for="Mecanico.Apellido"  class="form-control form-control-sm" id="apellido"  />
         </div>
+        <div class="mb-3">
+            <label for="Mecanico.FechaNacimiento" class="form-label">Fecha de Nacimiento</label>
+            <input asp-for="Mecanico.FechaNacimiento"  class="form-control form-control-sm" id="Fecha_Nacimiento"  />
+        </div>
          <div class="mb-3">
             <label asp-for="Mecanico.NivelEstudio" class="form-label"> Nivel academico</label>
             <select asp-for="Mecanico.NivelEstudio" class="form-control">
@@ -30,6 +34,10 @@
           <div class="mb-3">
             <label for="Mecanico.Direccion" class="form-label">Direccion</label>
             <input asp-for="Mecanico.Direccion" class="form-control form-control-sm" id="Direccion"   />
+          </div>
+         <div class="mb-3">
+            <label for="Mecanico.NumeroTelefono" class="form-label">Numero Telefónico</label>
+            <input asp-for="Mecanico.NumeroTelefono" class="form-control form-control-sm" id="Numero_Telefónico"   />
           </div>
             <button type="submit" class = "btn btn-primary">Guardar</button>  
     </div>

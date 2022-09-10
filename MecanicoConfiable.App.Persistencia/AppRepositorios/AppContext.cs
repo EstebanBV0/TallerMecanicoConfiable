@@ -9,6 +9,8 @@ namespace MecanicoConfiable.App.Persistencia
         public DbSet<CambioRepuesto> CambioRepuestos { get; set; }
         public DbSet<Dueño> Dueños { get; set; }
         public DbSet<Seguro> Seguros { get; set; }
+        public DbSet<Conductor> Conductor { get; set; }
+        public DbSet<Auxiliar> Auxiliar { get; set; }
         public DbSet<Vehiculo> Vehiculos { get; set; }
         public DbSet<Mecanico> Mecanicos { get; set; }
         public DbSet<RevisionNiveles> RevisionNiveles { get; set; }

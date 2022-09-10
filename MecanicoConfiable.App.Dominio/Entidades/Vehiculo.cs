@@ -8,7 +8,7 @@ namespace MecanicoConfiable.App.Dominio
     public class Vehiculo
 
     {
-        [Key,ForeignKey("Dueño")]
+        [Key]
         public int IdVehiculo { get; set; }
         public string Placa { get; set; }
         public string Tipo { get; set; }
@@ -21,7 +21,9 @@ namespace MecanicoConfiable.App.Dominio
         public string PaisOrigen { get; set; }
         public string DescripcionAdicional { get; set; }
         public virtual Seguro Seguro {get;set;}
-        public virtual Dueño Dueño { get; set; }
+        public virtual ICollection<Dueño> Dueño { get; set; }
+
+        public virtual ICollection<Conductor> Conductor { get; set; }
         public virtual ICollection<RevisionNiveles> RevisionNiveles { get; set; }
         public virtual ICollection<CambioRepuesto> CambioRepuesto { get; set; }
 

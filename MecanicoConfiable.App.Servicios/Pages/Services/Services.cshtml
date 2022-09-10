@@ -1,27 +1,24 @@
-@page  "{handler?}"
-@model AdministradorModel
+﻿@page
+@model ServicesModel
 @{
-    ViewData["Title"] = "Administrador";
 }
-
-
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
-            @foreach (var personal in Model.TPersonal)
+            @foreach (var servi in Model.TServicios)
             {
                 <div class="col">
                     <div class="card h-100 contenedores_proye">
-                        <img  src= @personal.ImagenUrl class="card-img-top imgproyect" alt="imagen-proyecto" /> 
+                        <img  src= @servi.ImagenUrl class="card-img-top imgproyect" alt="imagen-proyecto" /> 
                         
                         <div class="card-body">
-                            <h5 class="card-title">@personal.Titulo</h5>
-                            <p class="card-text">@personal.Descripcion </p>
+                            <h5 class="card-title">@servi.Titulo</h5>
+                            <p class="card-text">@servi.Descripcion </p>
                         </div>
                          <div class="card-footer">
-                       <a class="btn btn-primary "  asp-page="@personal.Link" 
+                       <a class="btn btn-primary "  asp-page="@servi.Link" 
                        rel="noopener noreferrer">Agregar</a>
                        <a class="btn btn-primary "  asp-page="/Mechanic/ListMecanicos" 
-                       rel="noopener noreferrer">Listado del personal</a>
+                       rel="noopener noreferrer">Listado</a>
                         </div> 
 
                     </div>
@@ -31,7 +28,3 @@
         </div>
 
     </div>
-
-
-
-

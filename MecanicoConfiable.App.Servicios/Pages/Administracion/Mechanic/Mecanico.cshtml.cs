@@ -25,7 +25,7 @@ public class MecanicoModel : PageModel
                 return Page();
             }
             if (Mecanico != null) _repoMecanico.AddMecanico(Mecanico);
-            return RedirectToPage("./Administrador");
+            return RedirectToPage("/Administracion/Administrador");
             
         } 
 }

@@ -9,10 +9,10 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Dueños",
+                name: "Auxiliar",
                 columns: table => new
                 {
-                    IdDueño = table.Column<int>(type: "int", nullable: false)
+                    IdAuxiliar = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Ciudad = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -23,7 +23,7 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Dueños", x => x.IdDueño);
+                    table.PrimaryKey("PK_Auxiliar", x => x.IdAuxiliar);
                 });
 
             migrationBuilder.CreateTable(
@@ -48,7 +48,8 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
                 name: "Vehiculos",
                 columns: table => new
                 {
-                    IdVehiculo = table.Column<int>(type: "int", nullable: false),
+                    IdVehiculo = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Placa = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Tipo = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Marca = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -60,12 +61,6 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Vehiculos", x => x.IdVehiculo);
-                    table.ForeignKey(
-                        name: "FK_Vehiculos_Dueños_IdVehiculo",
-                        column: x => x.IdVehiculo,
-                        principalTable: "Dueños",
-                        principalColumn: "IdDueño",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -82,6 +77,56 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
                     table.PrimaryKey("PK_CambioRepuestos", x => x.IdCambioRepuesto);
                     table.ForeignKey(
                         name: "FK_CambioRepuestos_Vehiculos_IdVehiculo",
+                        column: x => x.IdVehiculo,
+                        principalTable: "Vehiculos",
+                        principalColumn: "IdVehiculo",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Conductor",
+                columns: table => new
+                {
+                    IdConductor = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Ciudad = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IdVehiculo = table.Column<int>(type: "int", nullable: false),
+                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Apellido = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    NumeroTelefono = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    FechaNacimiento = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Conductor", x => x.IdConductor);
+                    table.ForeignKey(
+                        name: "FK_Conductor_Vehiculos_IdVehiculo",
+                        column: x => x.IdVehiculo,
+                        principalTable: "Vehiculos",
+                        principalColumn: "IdVehiculo",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Dueños",
+                columns: table => new
+                {
+                    IdDueño = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Ciudad = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IdVehiculo = table.Column<int>(type: "int", nullable: false),
+                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Apellido = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    NumeroTelefono = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    FechaNacimiento = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Dueños", x => x.IdDueño);
+                    table.ForeignKey(
+                        name: "FK_Dueños_Vehiculos_IdVehiculo",
                         column: x => x.IdVehiculo,
                         principalTable: "Vehiculos",
                         principalColumn: "IdVehiculo",
@@ -168,6 +213,16 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
                 column: "IdVehiculo");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Conductor_IdVehiculo",
+                table: "Conductor",
+                column: "IdVehiculo");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Dueños_IdVehiculo",
+                table: "Dueños",
+                column: "IdVehiculo");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Repuestos_IdCambioRepuesto",
                 table: "Repuestos",
                 column: "IdCambioRepuesto");
@@ -186,6 +241,15 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "Auxiliar");
+
+            migrationBuilder.DropTable(
+                name: "Conductor");
+
+            migrationBuilder.DropTable(
+                name: "Dueños");
+
+            migrationBuilder.DropTable(
                 name: "Repuestos");
 
             migrationBuilder.DropTable(
@@ -202,9 +266,6 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
 
             migrationBuilder.DropTable(
                 name: "Vehiculos");
-
-            migrationBuilder.DropTable(
-                name: "Dueños");
         }
     }
 }
