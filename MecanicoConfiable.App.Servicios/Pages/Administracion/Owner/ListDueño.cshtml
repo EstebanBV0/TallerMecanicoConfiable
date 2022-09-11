@@ -1,0 +1,44 @@
+@page "{handler?}"
+@model ListDueñosModel
+@{
+    ViewData["Title"] = "Listadueño";
+}
+
+<h1>Propietarios de vehiculos actualmente</h1>
+<a asp-page="/Administracion/Administrador" class="btn-defaoult">Volver</a>
+<table class="table mt-5 mb-3">
+
+    <thead>
+      <tr>
+        <!--<th>ID</th>-->
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <!--<th>Fecha de Nacimiento</th>
+        <th>Direccion</th>
+        <th>Número de Teléfono</th>
+        <th>Email</th>
+        <th>Ciudad</th>-->
+        
+      </tr>
+    </thead>
+    @foreach (var dueño in Model.Dueños)
+    {
+        <tr>
+            <!--<td>@dueño.IdDueño</td>-->
+            <td>@dueño.Nombre</td>
+            <td>@dueño.Apellido</td>
+            <!--<td>dueño.FechaNacimiento</td>-->
+            <!--<td>dueño.Direccion</td>-->
+            <!--<td>dueño.NumeroTelefono</td>-->
+            <!--<td>dueño.Email</td>-->
+            <!--<td>dueño.Ciudad</td>-->
+            
+            <td>
+              <a class="btn btn-primary table-btn" asp-page="./EditDueño" asp-route-IdDueño = "@dueño.IdDueño">Editar</a>
+              <a class="btn btn-primary table-btn" asp-page="./DeleteDueño" asp-route-IdDueño = "@dueño.IdDueño">Eliminar</a>
+
+            </td>
+
+        </tr>
+    }
+</table>

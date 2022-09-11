@@ -1,0 +1,42 @@
+@page 
+@model ListAuxiliarModel
+@{
+    ViewData["Title"] = "Listaauxiliar";
+}
+
+<h1>Lista Auxliares</h1>
+
+ <a asp-page="/Administracion/Administrador" class="btn-defaoult">Volver</a>
+
+<table class="table mt-5 mb-3">
+
+    <thead>
+      <tr>
+        <!--<th>ID</th>-->
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <!--<th>Nivel de estudio</th>
+        <th>Numero de telefono</th>
+        <th>Direccion</th>
+        <th>Fecha de nacimiento</th>-->
+      </tr>
+    </thead>
+    @foreach (var auxiliar in Model.Auxiliares)
+    {
+        <tr>
+            <!--<td>auxiliar.IdAuxiliar</td>-->
+            <td>@auxiliar.Nombre</td>
+            <td>@auxiliar.Apellido</td>
+            <!--<td>auxiliar.NivelEstudio</td>-->
+            <!--<td>auxiliar.NumeroTelefono</td>-->
+            <!--<td>auxiliar.Direccion</td>-->
+            <!--<td>auxiliar.FechaNacimiento</td>-->
+            <td>
+              <a class="btn btn-primary table-btn" asp-page="./EditAuxliar" asp-route-IdAuxiliar = "@auxiliar.IdAuxiliar">Editar</a>
+              <a class="btn btn-primary table-btn" asp-page="./DeleteAuxiliar" asp-route-IdAuxiliar = "@auxiliar.IdAuxiliar">Eliminar</a>
+
+            </td>
+
+        </tr>
+    }
+</table>

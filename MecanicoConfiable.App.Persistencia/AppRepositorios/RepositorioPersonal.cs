@@ -21,14 +21,14 @@ namespace MecanicoConfiable.App.Persistencia
                     Titulo = "Auxiliares",
                     Descripcion = "Personal encargado de la administracion",
                     ImagenUrl = "/imagenes/auxiliar.png",
-                     Link = "/Mechanic/Mecanico",
-                    LinkList = "/Mechanic/Mecanico"},
+                    Link = "/Administracion/Auxiliar/Auxiliar",
+                    LinkList = "/Administracion/Auxiliar/ListAuxiliar"},
                     new Personal {
                     Titulo = "Dueños",
                     Descripcion = "Dueños de veniculos",
                     ImagenUrl = "/imagenes/Dueño.png",
-                    Link = "/Mechanic/Mecanico",
-                    LinkList = "/Mechanic/Mecanico"},
+                    Link = "/Administracion/Owner/Dueño",
+                    LinkList = "/Administracion/Owner/ListDueño"},
                     new Personal {
                     Titulo = "Conductores",
                     Descripcion = "Personal encargado del manejo de los vehiculos",

@@ -1,0 +1,41 @@
+@page 
+@model EditDueñoModel
+
+@{
+}
+<h2>Edición Propietario @Model.Dueño.Nombre</h2>
+<a class="btn-defaoult" asp-page ="./ListDueño">Volver</a>
+
+<form method="post">
+    <input type = "hidden" asp-for ="Dueño.IdDueño"/>
+    <div class="form-group">
+        <label asp-for ="Dueño.Nombre"></label>
+        <input asp-for = "Dueño.Nombre" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for ="Dueño.Apellido"></label>
+        <input asp-for = "Dueño.Apellido" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for ="Dueño.FechaNacimiento">Fecha de Nacimiento</label>
+        <input asp-for = "Dueño.FechaNacimiento" class="form-control">
+    </div>
+    
+    <div class="form-group">
+        <label asp-for ="Dueño.NumeroTelefono">Número de Teléfono</label>
+        <input asp-for = "Dueño.NumeroTelefono" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for ="Dueño.Email"></label>
+        <input asp-for = "Dueño.Email" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for ="Dueño.Ciudad"></label>
+        <input asp-for = "Dueño.Ciudad" class="form-control">
+    </div>
+    
+    
+    
+   <button type="submit" class="btn btn-primary">Guardar</button>
+   
+</form>

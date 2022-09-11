@@ -6,29 +6,31 @@
 
 <h1>Mecanicos contratados actualmente</h1>
 
+ <a asp-page="/Administracion/Administrador" class="btn-defaoult">Volver</a>
+
 <table class="table mt-5 mb-3">
 
     <thead>
       <tr>
-        <th>ID</th>
+        <!--<th>ID</th>-->
         <th>Nombre</th>
         <th>Apellido</th>
-        <th>Nivel de estudio</th>
+        <!--<th>Nivel de estudio</th>
         <th>Numero de telefono</th>
         <th>Direccion</th>
-        <th>Fecha de nacimiento</th>
+        <th>Fecha de nacimiento</th>-->
       </tr>
     </thead>
     @foreach (var mecanico in Model.Mecanicos)
     {
         <tr>
-            <td>@mecanico.IdMecanico</td>
+            <!--<td>mecanico.IdMecanico</td>-->
             <td>@mecanico.Nombre</td>
             <td>@mecanico.Apellido</td>
-            <td>@mecanico.NivelEstudio</td>
-            <td>@mecanico.NumeroTelefono</td>
-            <td>@mecanico.Direccion</td>
-            <td>@mecanico.FechaNacimiento</td>
+            <!--<td>mecanico.NivelEstudio</td>
+            <td>mecanico.NumeroTelefono</td>
+            <td>mecanico.Direccion</td>
+            <td>mecanico.FechaNacimiento</td>-->
             <td>
               <a class="btn btn-primary table-btn" asp-page="./EditMecanico" asp-route-IdMecanico = "@mecanico.IdMecanico">Editar</a>
               <a class="btn btn-primary table-btn" asp-page="./DeleteMecanico" asp-route-IdMecanico = "@mecanico.IdMecanico">Eliminar</a>

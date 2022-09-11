@@ -1,0 +1,79 @@
+@page 
+@model VehiculoModel
+@{
+    ViewData["Title"] = "Auxiliar";
+}
+
+
+
+<form method="post" id = "adminAgregarmecanico" class="mt-5 mb-3 formuadmin"  >
+ <h2>Agregando Vehiculo </h2>
+ <a asp-page="/Administracion/Administrador" class="btn-defaoult">Volver</a>
+
+    <div class="formularioc">
+        <div class="mt-5 mb-3">
+            <label for="placa" class="form-label">Placa</label>
+            <input asp-for="Vehiculo.Placa" type="nombre" class="form-control form-control-sm" id="placa"  />
+        </div>
+        <div class="mb-3">
+            <label for="Tipo" class="form-label"> Tipo </label>
+            <select asp-for="Vehiculo.Tipo" class="form-control">
+                <option value="" disabled="" selected=""></option>
+                <option value="SEDAN">SEDAN</option>
+                <option value="HATCHBACK">HATCHBACK</option>
+                <option value="SUB">SUB</option>
+                <option value="TODO TERRENO">TODO TERRENO</option>
+                <option value="SPORT">SPORT</option>
+                <option value="FAMILIAR">FAMILIAR</option>
+            </select>
+        </div>
+        <!--<div class="mb-3">
+            <label for="tipo" class="form-label">Tipo</label>
+            <input asp-for="Vehiculo.Tipo"  class="form-control form-control-sm" id="tipo"  />
+        </div>-->
+        <div class="mb-3">
+            <label for="marca" class="form-label">Marca</label>
+            <input asp-for="Vehiculo.Marca"  class="form-control form-control-sm" id="marca"  />
+        </div>
+      
+        <div class="mb-3">
+            <label for="modelo" class="form-label">Modelo</label>
+            <input asp-for="Vehiculo.Modelo"  class="form-control form-control-sm" id="modelo"  />
+        </div>        
+        <div class="mb-3">
+            <label for="pasajeros" class="form-label">Numero de Pasajeros</label>
+            <input asp-for="Vehiculo.NumeroPasajeros"  class="form-control form-control-sm" id="pasajeros"  />
+        </div>
+        <div class="mb-3">
+            <label for="paisOrigen" class="form-label">Pais de Origen</label>
+            <input asp-for="Vehiculo.PaisOrigen"  class="form-control form-control-sm" id="paisOrigen"  />
+        </div>
+        <div class="mb-3">
+            <label for="descripcion" class="form-label">Descripcion Adicional</label>
+            <input asp-for="Vehiculo.DescripcionAdicional"  class="form-control form-control-sm" id="descripcion"  />
+        </div>
+        <div class="mb-3">
+            <label for="seguro" class="form-label">Seguro</label>
+            <input asp-for="Vehiculo.Seguro"  class="form-control form-control-sm" id="seguro"  />
+        </div>
+        <div class="mb-3">
+            <label for="dueño" class="form-label">Propietario</label>
+            <input asp-for="Vehiculo.Dueño"  class="form-control form-control-sm" id="dueño"  />
+        </div>
+        <div class="mb-3">
+            <label for="dueño" class="form-label">Conductor </label>
+            <input asp-for="Vehiculo.Dueño"  class="form-control form-control-sm" id="dueño"  />
+        </div>
+        <div class="mb-3">
+            <label for="dueño" class="form-label">Revision de Niveles</label>
+            <input asp-for="Vehiculo.Dueño"  class="form-control form-control-sm" id="dueño"  />
+        </div>
+        <div class="mb-3">
+            <label for="dueño" class="form-label">Cambio de Repuesto</label>
+            <input asp-for="Vehiculo.Dueño"  class="form-control form-control-sm" id="dueño"  />
+        </div>
+         
+          
+            <button type="submit" class = "btn btn-primary">Guardar</button>  
+    </div>
+</form>

@@ -1,0 +1,43 @@
+@page 
+@model AuxiliarModel
+@{
+    ViewData["Title"] = "Auxiliar";
+}
+
+
+
+<form method="post" id = "adminAgregarmecanico" class="mt-5 mb-3 formuadmin"  >
+ <h2>Agregando Auxiliar </h2>
+ <a asp-page="/Administracion/Administrador" class="btn-defaoult">Volver</a>
+
+    <div class="formularioc">
+        <div class="mt-5 mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input asp-for="Auxiliar.Nombre" type="nombre" class="form-control form-control-sm" id="nombre"  />
+        </div>
+        <div class="mb-3">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input asp-for="Auxiliar.Apellido"  class="form-control form-control-sm" id="apellido"  />
+        </div>
+        <div class="mb-3">
+            <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
+            <input asp-for="Auxiliar.FechaNacimiento"  class="form-control form-control-sm" id="fechaNacimiento"  />
+        </div>
+      
+        <div class="mb-3">
+            <label for="numeroTelefono" class="form-label">Telefono</label>
+            <input asp-for="Auxiliar.NumeroTelefono"  class="form-control form-control-sm" id="numeroTelefono"  />
+        </div>        
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input asp-for="Auxiliar.Email"  class="form-control form-control-sm" id="email"  />
+        </div>
+        <div class="mb-3">
+            <label for="ciudad" class="form-label">Ciudad</label>
+            <input asp-for="Auxiliar.Ciudad"  class="form-control form-control-sm" id="ciudad"  />
+        </div>
+         
+          
+            <button type="submit" class = "btn btn-primary">Guardar</button>  
+    </div>
+</form>

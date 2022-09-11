@@ -1,0 +1,47 @@
+@page "{handler?}"
+@model ListVehiculoModel
+@{
+    ViewData["Title"] = "Listadueño";
+}
+
+<h1>  Vehiculos Actualmente</h1>
+<a asp-page="/Services/Services" class="btn-defaoult">Volver</a>
+<table class="table mt-5 mb-3">
+
+    <thead>
+      <tr>
+        <!--<th>ID</th>-->
+        <th>Placa</th>
+        <!--<th>Tipo</th>-->
+        <th>Marca</th>
+        <!--<th>Direccion</th>
+        <th>Número de Teléfono</th>
+        <th>Email</th>
+        <th>Ciudad</th>-->
+        
+      </tr>
+    </thead>
+    @foreach (var vehiculo in Model.Vehiculos)
+    {
+        <tr>
+            <!--<td>vehiculo.IdVehiculo</td>-->
+            <td>@vehiculo.Placa</td>
+            <!--<td>vehiculo.Tipo</td>-->
+            <td>@vehiculo.Marca</td>
+            <!--<td>vehiculo.Modelo</td>-->
+            <!--<td>vehiculo.NumeroPasajeros</td>-->
+            <!--<td>vehiculo.PaisOrigen</td>-->
+            <!--<td>vehiculo.DescripcionAdicional</td>-->
+            <!--<td>vehiculo.Dueño</td>
+            <td>vehiculo.Mecanico</td>-->
+            
+            <td>
+              <a class="btn btn-primary table-btn" asp-page="./EditVehiculo" asp-route-IdVehiculo = "@vehiculo.IdVehiculo">Editar</a>
+              <a class="btn btn-primary table-btn" asp-page="./DeleteVehiculo" asp-route-IdVehiculo = "@vehiculo.IdVehiculo">Eliminar</a>
+              <a class="btn btn-primary table-btn" asp-page="./DetailVehiculo" asp-route-IdVehiculo = "@vehiculo.IdVehiculo">Detalle</a>
+
+            </td>
+
+        </tr>
+    }
+</table>

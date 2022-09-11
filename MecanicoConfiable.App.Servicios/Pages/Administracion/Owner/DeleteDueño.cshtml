@@ -1,0 +1,13 @@
+@page
+@model DeleteDueñoModel
+@{
+}
+<h1>Borrado de confirmación</h1>
+
+<div class="alet alet-danger">
+   <h5>Esta seguro que deseaborrar a @Model.Dueño.Nombre</h5>
+    <form method="post">
+      <button type="submit" class="btn btn-danger">Si</button>
+      <a class="btn btn-primary" asp-page ="./ListDueño">No</a>
+    </form>
+</div>

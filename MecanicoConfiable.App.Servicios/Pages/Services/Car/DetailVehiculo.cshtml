@@ -1,0 +1,88 @@
+@page 
+@model DetailVehiculoModel
+
+@{
+}
+<h2>Detalle de Vehiculo Placa: @Model.Vehiculo.Placa</h2>
+<a class="btn-defaoult" asp-page ="./ListVehiculo">Volver</a>
+
+<table class="table mt-5 mb-3"> 
+    <thead>
+      <tr>
+        <th>ID</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Vehiculo.IdVehiculo</td>
+    </tr>
+        <thead>
+      <tr>
+        <th>Placa</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Vehiculo.Placa</td>
+    </tr>
+
+        <thead>
+      <tr>
+        <th>Tipo</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Vehiculo.Tipo</td>
+    </tr>
+        <thead>
+      <tr>
+        <th>Marca</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Vehiculo.Marca</td>
+    </tr>
+
+        <thead>
+      <tr>
+        <th>Modelo</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Vehiculo.Modelo</td>
+    </tr>
+        <thead>
+      <tr>
+        <th>Pasajeros</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Vehiculo.NumeroPasajeros</td>
+    </tr>
+
+        <thead>
+      <tr>
+        <th>Pais de Origen</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Vehiculo.PaisOrigen</td>
+    </tr>
+        <thead>
+      <tr>
+        <th>Descripcion Adicional</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Vehiculo.DescripcionAdicional</td>
+    </tr>
+
+        <thead>
+      <tr>
+        <th>Dueño</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Vehiculo.Dueño</td>
+    </tr>
+
+
+</table>

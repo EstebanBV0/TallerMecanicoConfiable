@@ -13,7 +13,7 @@ namespace MecanicoConfiable.App.Dominio
         public string Email { get; set; }
 
         [ForeignKey ( "Vehiculo" )]
-        public int IdVehiculo { get; set; }
+        public int? IdVehiculo { get; set; }
         public virtual Vehiculo Vehiculo { get; set; }
 
 

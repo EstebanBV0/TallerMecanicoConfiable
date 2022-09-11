@@ -14,7 +14,8 @@ namespace MecanicoConfiable.App.Persistencia
                     Titulo = "Vehiculos",
                     Descripcion = "Vehiculos actuales de la empresa",
                     ImagenUrl = "/imagenes/Vehiculo.png",
-                    Link = "/Mechanic/Mecanico"},
+                    Link = "/Services/car/Vehiculo",
+                    LinkList = "/Services/car/ListVehiculo"},
                     new Servicio { 
                     Titulo = "Repuestos",
                     Descripcion = "Todos los repuestos en existencia",

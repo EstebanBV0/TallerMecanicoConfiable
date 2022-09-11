@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\esbv1\\OneDrive\\Escritorio\\C#\\Tallermecanico\\TallerMecanicoConfiable\\MecanicoConfiable.App\\MecanicoConfiable.App.Dominio\\MecanicoConfiable.App.Dominio.csproj": {}
+    "C:\\T1\\TallerMecanicoConfiable\\MecanicoConfiable.App.Dominio\\MecanicoConfiable.App.Dominio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\esbv1\\OneDrive\\Escritorio\\C#\\Tallermecanico\\TallerMecanicoConfiable\\MecanicoConfiable.App\\MecanicoConfiable.App.Dominio\\MecanicoConfiable.App.Dominio.csproj": {
+    "C:\\T1\\TallerMecanicoConfiable\\MecanicoConfiable.App.Dominio\\MecanicoConfiable.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\esbv1\\OneDrive\\Escritorio\\C#\\Tallermecanico\\TallerMecanicoConfiable\\MecanicoConfiable.App\\MecanicoConfiable.App.Dominio\\MecanicoConfiable.App.Dominio.csproj",
+        "projectUniqueName": "C:\\T1\\TallerMecanicoConfiable\\MecanicoConfiable.App.Dominio\\MecanicoConfiable.App.Dominio.csproj",
         "projectName": "MecanicoConfiable.App.Dominio",
-        "projectPath": "C:\\Users\\esbv1\\OneDrive\\Escritorio\\C#\\Tallermecanico\\TallerMecanicoConfiable\\MecanicoConfiable.App\\MecanicoConfiable.App.Dominio\\MecanicoConfiable.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\esbv1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\esbv1\\OneDrive\\Escritorio\\C#\\Tallermecanico\\TallerMecanicoConfiable\\MecanicoConfiable.App\\MecanicoConfiable.App.Dominio\\obj\\",
+        "projectPath": "C:\\T1\\TallerMecanicoConfiable\\MecanicoConfiable.App.Dominio\\MecanicoConfiable.App.Dominio.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\T1\\TallerMecanicoConfiable\\MecanicoConfiable.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\esbv1\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
