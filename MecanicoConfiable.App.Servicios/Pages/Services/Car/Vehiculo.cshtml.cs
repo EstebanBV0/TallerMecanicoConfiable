@@ -22,7 +22,7 @@ public class VehiculoModel : PageModel
         {
             if (!ModelState.IsValid)
             {
-                return Page();
+                return RedirectToPage("./ListVehiculo");
             }
             if (Vehiculo != null) _repoVehiculo.AddVehiculo(Vehiculo);
             return RedirectToPage("./ListVehiculo");

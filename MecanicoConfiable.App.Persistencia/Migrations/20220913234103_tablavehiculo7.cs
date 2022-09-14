@@ -4,12 +4,12 @@
 
 namespace MecanicoConfiable.App.Persistencia.Migrations
 {
-    public partial class Inicial : Migration
+    public partial class tablavehiculo7 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Auxiliar",
+                name: "Auxiliares",
                 columns: table => new
                 {
                     IdAuxiliar = table.Column<int>(type: "int", nullable: false)
@@ -23,7 +23,7 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Auxiliar", x => x.IdAuxiliar);
+                    table.PrimaryKey("PK_Auxiliares", x => x.IdAuxiliar);
                 });
 
             migrationBuilder.CreateTable(
@@ -56,11 +56,18 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
                     Modelo = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     NumeroPasajeros = table.Column<int>(type: "int", nullable: false),
                     PaisOrigen = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    DescripcionAdicional = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    DescripcionAdicional = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IdMecanico = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Vehiculos", x => x.IdVehiculo);
+                    table.ForeignKey(
+                        name: "FK_Vehiculos_Mecanicos_IdMecanico",
+                        column: x => x.IdMecanico,
+                        principalTable: "Mecanicos",
+                        principalColumn: "IdMecanico",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -116,7 +123,7 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Ciudad = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    IdVehiculo = table.Column<int>(type: "int", nullable: false),
+                    IdVehiculo = table.Column<int>(type: "int", nullable: true),
                     Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Apellido = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     NumeroTelefono = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -129,8 +136,7 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
                         name: "FK_Dueños_Vehiculos_IdVehiculo",
                         column: x => x.IdVehiculo,
                         principalTable: "Vehiculos",
-                        principalColumn: "IdVehiculo",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "IdVehiculo");
                 });
 
             migrationBuilder.CreateTable(
@@ -144,18 +150,11 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
                     NivelLiquidoFrenos = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     NivelRefrigerante = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     NivelLiquidDireccion = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    IdMecanico = table.Column<int>(type: "int", nullable: false),
                     IdVehiculo = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_RevisionNiveles", x => x.IdNiveles);
-                    table.ForeignKey(
-                        name: "FK_RevisionNiveles_Mecanicos_IdMecanico",
-                        column: x => x.IdMecanico,
-                        principalTable: "Mecanicos",
-                        principalColumn: "IdMecanico",
-                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_RevisionNiveles_Vehiculos_IdVehiculo",
                         column: x => x.IdVehiculo,
@@ -228,20 +227,20 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
                 column: "IdCambioRepuesto");
 
             migrationBuilder.CreateIndex(
-                name: "IX_RevisionNiveles_IdMecanico",
-                table: "RevisionNiveles",
-                column: "IdMecanico");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_RevisionNiveles_IdVehiculo",
                 table: "RevisionNiveles",
                 column: "IdVehiculo");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Vehiculos_IdMecanico",
+                table: "Vehiculos",
+                column: "IdMecanico");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Auxiliar");
+                name: "Auxiliares");
 
             migrationBuilder.DropTable(
                 name: "Conductor");
@@ -262,10 +261,10 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
                 name: "CambioRepuestos");
 
             migrationBuilder.DropTable(
-                name: "Mecanicos");
+                name: "Vehiculos");
 
             migrationBuilder.DropTable(
-                name: "Vehiculos");
+                name: "Mecanicos");
         }
     }
 }

@@ -8,7 +8,7 @@
 
 <form method="post" id = "adminAgregarmecanico" class="mt-5 mb-3 formuadmin"  >
  <h2>Agregando Vehiculo </h2>
- <a asp-page="/Administracion/Administrador" class="btn-defaoult">Volver</a>
+ <a asp-page="/Services/Services" class="btn-defaoult">Volver</a>
 
     <div class="formularioc">
         <div class="mt-5 mb-3">
@@ -60,7 +60,7 @@
             <label for="dueño" class="form-label">Propietario</label>
             <input asp-for="Vehiculo.Dueño"  class="form-control form-control-sm" id="dueño"  />
         </div>
-        <div class="mb-3">
+        @* <div class="mb-3">
             <label for="dueño" class="form-label">Conductor </label>
             <input asp-for="Vehiculo.Dueño"  class="form-control form-control-sm" id="dueño"  />
         </div>
@@ -71,9 +71,12 @@
         <div class="mb-3">
             <label for="dueño" class="form-label">Cambio de Repuesto</label>
             <input asp-for="Vehiculo.Dueño"  class="form-control form-control-sm" id="dueño"  />
+        </div> *@
+        <div class="mb-3">
+            <label for="mecanico" class="form-label">Mecanico</label>
+            <input asp-for="Vehiculo.IdMecanico"  class="form-control form-control-sm" id="mecha" />
         </div>
-         
           
-            <button type="submit" class = "btn btn-primary">Guardar</button>  
+        <button type="submit" class = "btn btn-primary">Guardar</button>  
     </div>
 </form>

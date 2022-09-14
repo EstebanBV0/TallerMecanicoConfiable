@@ -212,9 +212,6 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
                     b.Property<string>("FechaHora")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("IdMecanico")
-                        .HasColumnType("int");
-
                     b.Property<int>("IdVehiculo")
                         .HasColumnType("int");
 
@@ -231,8 +228,6 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IdNiveles");
-
-                    b.HasIndex("IdMecanico");
 
                     b.HasIndex("IdVehiculo");
 
@@ -275,6 +270,9 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
                     b.Property<string>("DescripcionAdicional")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("IdMecanico")
+                        .HasColumnType("int");
+
                     b.Property<string>("Marca")
                         .HasColumnType("nvarchar(max)");
 
@@ -294,6 +292,8 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IdVehiculo");
+
+                    b.HasIndex("IdMecanico");
 
                     b.ToTable("Vehiculos");
                 });
@@ -342,19 +342,11 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
 
             modelBuilder.Entity("MecanicoConfiable.App.Dominio.RevisionNiveles", b =>
                 {
-                    b.HasOne("MecanicoConfiable.App.Dominio.Mecanico", "Mecanico")
-                        .WithMany()
-                        .HasForeignKey("IdMecanico")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("MecanicoConfiable.App.Dominio.Vehiculo", "Vehiculo")
                         .WithMany("RevisionNiveles")
                         .HasForeignKey("IdVehiculo")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Mecanico");
 
                     b.Navigation("Vehiculo");
                 });
@@ -370,9 +362,25 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
                     b.Navigation("Vehiculo");
                 });
 
+            modelBuilder.Entity("MecanicoConfiable.App.Dominio.Vehiculo", b =>
+                {
+                    b.HasOne("MecanicoConfiable.App.Dominio.Mecanico", "Mecanico")
+                        .WithMany("Vehiculo")
+                        .HasForeignKey("IdMecanico")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Mecanico");
+                });
+
             modelBuilder.Entity("MecanicoConfiable.App.Dominio.CambioRepuesto", b =>
                 {
                     b.Navigation("Repuestos");
+                });
+
+            modelBuilder.Entity("MecanicoConfiable.App.Dominio.Mecanico", b =>
+                {
+                    b.Navigation("Vehiculo");
                 });
 
             modelBuilder.Entity("MecanicoConfiable.App.Dominio.Vehiculo", b =>

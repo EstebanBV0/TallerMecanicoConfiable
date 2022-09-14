@@ -13,6 +13,11 @@ namespace MecanicoConfiable.App.Persistencia
 
         Vehiculo GetVehiculoId (int IdVehiculo);
 
+        Vehiculo GetVehiculoPlaca (string Placa);
+
+        Vehiculo AddMechanic (Vehiculo MechanicUpdate);
+
+
         Vehiculo DeleteVehiculo (int IdVehiculo);
 
     }

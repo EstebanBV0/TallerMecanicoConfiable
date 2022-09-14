@@ -10,7 +10,11 @@ namespace MecanicoConfiable.App.Dominio
         [Key]
         public int IdMecanico { get; set; }
         public string Direccion { get; set; }
-        public string NivelEstudio { get; set; }   
+        public string NivelEstudio { get; set; } 
+
+        public virtual ICollection<Vehiculo> Vehiculo { get; set; }
+
+          
         
 
     }

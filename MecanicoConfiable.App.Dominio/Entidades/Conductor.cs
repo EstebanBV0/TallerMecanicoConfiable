@@ -11,6 +11,7 @@ namespace MecanicoConfiable.App.Dominio
         public int IdConductor { get; set; }
         public string Ciudad { get; set; }
         public string Email { get; set; }
+        
         [ForeignKey ( "Vehiculo" )]
         public int IdVehiculo { get; set; }
         public virtual Vehiculo Vehiculo { get; set; }

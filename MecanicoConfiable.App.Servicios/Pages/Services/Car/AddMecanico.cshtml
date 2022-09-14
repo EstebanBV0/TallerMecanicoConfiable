@@ -1,0 +1,18 @@
+﻿@page
+@model AddMecanicoModel
+@{
+}
+<h2>Agregando Mecanico  @Model.Vehiculo.Placa  </h2>
+
+<a class="btn btn-primary" asp-page ="/Services/Car/ListVehiculo">Volver</a>
+
+<form method="post">
+    <input type = "hidden" asp-for ="Vehiculo.Placa"/>
+    <div class="form-group">
+        <label asp-for ="Vehiculo.IdMecanico"></label>
+        <input asp-for ="Vehiculo.IdMecanico" class="form-control">
+    </div>
+
+   <button type="submit" class="btn btn-primary">Guardar</button>
+   
+</form>

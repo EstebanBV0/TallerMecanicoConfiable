@@ -22,6 +22,10 @@ namespace MecanicoConfiable.App.Dominio
         public virtual ICollection<Conductor> Conductor { get; set; }
         public virtual ICollection<RevisionNiveles> RevisionNiveles { get; set; }
         public virtual ICollection<CambioRepuesto> CambioRepuesto { get; set; }
+        
+        [ForeignKey ( "Mecanico" )]
+        public int IdMecanico { get; set; }
+        public virtual Mecanico Mecanico { get; set; }
 
     }
 }

@@ -32,6 +32,25 @@ namespace MecanicoConfiable.App.Persistencia
 
         }
 
+   Vehiculo IRepositorioVehiculo.GetVehiculoPlaca(string Placa)
+        {
+        return _appContext.Vehiculos.SingleOrDefault(p => p.Placa == Placa);
+
+        }
+    public Vehiculo AddMechanic(Vehiculo vehiculoAct)
+        {
+            Vehiculo vehiculo = _appContext.Vehiculos.SingleOrDefault(p => p.Placa == vehiculoAct.Placa);
+            if (vehiculo != null)
+            {
+               
+                vehiculo.IdMecanico = vehiculoAct.IdMecanico;
+
+                _appContext.SaveChanges();
+            }
+            return vehiculo;
+        }
+    
+
     public Vehiculo UpdateVehiculo(Vehiculo vehiculoActualizado)
         {
             Vehiculo vehiculo = _appContext.Vehiculos.SingleOrDefault(p => p.IdVehiculo == vehiculoActualizado.IdVehiculo);
@@ -49,6 +68,7 @@ namespace MecanicoConfiable.App.Persistencia
                 vehiculo.Conductor = vehiculoActualizado.Conductor;
                 vehiculo.RevisionNiveles = vehiculoActualizado.RevisionNiveles;
                 vehiculo.CambioRepuesto = vehiculoActualizado.CambioRepuesto;
+                vehiculo.IdMecanico = vehiculoActualizado.IdMecanico;
 
                 _appContext.SaveChanges();
             }

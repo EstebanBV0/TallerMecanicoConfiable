@@ -14,12 +14,7 @@ namespace MecanicoConfiable.App.Dominio
         public string NivelLiquidoFrenos { get; set; }
         public string NivelRefrigerante { get; set; }
         public string NivelLiquidDireccion { get; set; }
-        
-
-        [ForeignKey ( "Mecanico" )]
-        public int IdMecanico { get; set; }
-        public virtual Mecanico Mecanico { get; set; }
-        
+    
         [ForeignKey ( "Vehiculo" )]
         public int IdVehiculo { get; set; }
         public virtual Vehiculo Vehiculo { get; set; }
