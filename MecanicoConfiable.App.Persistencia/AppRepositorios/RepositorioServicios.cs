@@ -31,6 +31,12 @@ namespace MecanicoConfiable.App.Persistencia
                     Descripcion = "Registro de cambio de repuestos",
                     ImagenUrl = "/imagenes/CambioRepuestos.png",
                     Link = "/Mechanic/Mecanico"},
+                    new Servicio { 
+                    Titulo = "Vehiculos Asignados",
+                    Descripcion = "Registro de vehiculos asignados para cada mecánico",
+                    ImagenUrl = "/imagenes/Libreta.png",
+                    Link = "/Services/car/Vehiculo",
+                    LinkList = "/Services/VehiculosAsignados/ListMechanics"},
             };
             
 

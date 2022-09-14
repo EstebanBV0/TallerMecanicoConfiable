@@ -99,6 +99,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcU2VydmljZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Tallermecanico/TallerMecanicoConfiable/MecanicoConfiable.App/MecanicoConfiable.App.Servicios/Pages/Services/VehiculosAsignados/ListCarAsignados.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcVmVoaWN1bG9zQXNpZ25hZG9zXExpc3RDYXJBc2lnbmFkb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Tallermecanico/TallerMecanicoConfiable/MecanicoConfiable.App/MecanicoConfiable.App.Servicios/Pages/Services/VehiculosAsignados/ListMechanics.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcVmVoaWN1bG9zQXNpZ25hZG9zXExpc3RNZWNoYW5pY3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/esbv1/OneDrive/Escritorio/C\#/Tallermecanico/TallerMecanicoConfiable/MecanicoConfiable.App/MecanicoConfiable.App.Servicios/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

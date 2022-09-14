@@ -10,6 +10,7 @@ namespace MecanicoConfiable.App.Persistencia
         Vehiculo UpdateVehiculo(Vehiculo vehiculoActualizado);
 
         IEnumerable<Vehiculo> GetAll();
+        IEnumerable<Vehiculo> GetAllForMechanich(int IdMecanico);
 
         Vehiculo GetVehiculoId (int IdVehiculo);
 

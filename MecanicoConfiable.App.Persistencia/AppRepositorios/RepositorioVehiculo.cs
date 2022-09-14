@@ -26,6 +26,16 @@ namespace MecanicoConfiable.App.Persistencia
         return _appContext.Vehiculos;
 
       }
+
+      IEnumerable<Vehiculo> IRepositorioVehiculo.GetAllForMechanich(int IdMecanico){
+
+/*          var vehiculos = _appContext.Vehiculos.ToList().Select(x => x.IdMecanico == IdMecanico);
+ */         var vehiculos = _appContext.Vehiculos.Where(s => s.IdMecanico == IdMecanico).ToList();
+        return vehiculos;
+
+      }
+
+
       Vehiculo IRepositorioVehiculo.GetVehiculoId(int IdVehiculo)
         {
         return _appContext.Vehiculos.SingleOrDefault(p => p.IdVehiculo == IdVehiculo);

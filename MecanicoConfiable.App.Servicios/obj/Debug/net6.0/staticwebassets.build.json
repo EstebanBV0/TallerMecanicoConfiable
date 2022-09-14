@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qxTEhb9b6VA0zOrW5ztOcuYCOl6Sz70w7rTRsYWvhbk=",
+  "Hash": "NItpZNHt4WlnB2bDsY00gIfPdIwF6ffIsumIITel0gY=",
   "Source": "MecanicoConfiable.App.Servicios",
   "BasePath": "_content/MecanicoConfiable.App.Servicios",
   "Mode": "Default",
@@ -168,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagenes\\Dueño.png"
+    },
+    {
+      "Identity": "C:\\Users\\esbv1\\OneDrive\\Escritorio\\C#\\Tallermecanico\\TallerMecanicoConfiable\\MecanicoConfiable.App\\MecanicoConfiable.App.Servicios\\wwwroot\\imagenes\\Libreta.png",
+      "SourceId": "MecanicoConfiable.App.Servicios",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\esbv1\\OneDrive\\Escritorio\\C#\\Tallermecanico\\TallerMecanicoConfiable\\MecanicoConfiable.App\\MecanicoConfiable.App.Servicios\\wwwroot\\",
+      "BasePath": "_content/MecanicoConfiable.App.Servicios",
+      "RelativePath": "imagenes/Libreta.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\Libreta.png"
     },
     {
       "Identity": "C:\\Users\\esbv1\\OneDrive\\Escritorio\\C#\\Tallermecanico\\TallerMecanicoConfiable\\MecanicoConfiable.App\\MecanicoConfiable.App.Servicios\\wwwroot\\imagenes\\Mecanico.png",
