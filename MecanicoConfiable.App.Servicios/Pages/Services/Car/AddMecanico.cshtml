@@ -8,10 +8,18 @@
 
 <form method="post">
     <input type = "hidden" asp-for ="Vehiculo.Placa"/>
-    <div class="form-group">
+
+   <select asp-for="Vehiculo.IdMecanico" class="form-control">                
+             @foreach (var Mecanico in Model.Mecanico)
+    {                
+                <option value="@Mecanico.IdMecanico">@Mecanico.Nombre</option>            
+    }
+    </select>
+
+    <!--<div class="form-group">
         <label asp-for ="Vehiculo.IdMecanico"></label>
         <input asp-for ="Vehiculo.IdMecanico" class="form-control">
-    </div>
+    </div>-->
 
    <button type="submit" class="btn btn-primary">Guardar</button>
    

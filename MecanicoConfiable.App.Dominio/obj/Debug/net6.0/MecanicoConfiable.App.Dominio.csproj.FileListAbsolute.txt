@@ -22,3 +22,15 @@ C:\T1\TallerMecanicoConfiable\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\Mec
 C:\T1\TallerMecanicoConfiable\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\refint\MecanicoConfiable.App.Dominio.dll
 C:\T1\TallerMecanicoConfiable\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\MecanicoConfiable.App.Dominio.pdb
 C:\T1\TallerMecanicoConfiable\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\ref\MecanicoConfiable.App.Dominio.dll
+C:\C#\TALLER\TallerMecanicoConfiable\MecanicoConfiable.App.Dominio\bin\Debug\net6.0\MecanicoConfiable.App.Dominio.deps.json
+C:\C#\TALLER\TallerMecanicoConfiable\MecanicoConfiable.App.Dominio\bin\Debug\net6.0\MecanicoConfiable.App.Dominio.dll
+C:\C#\TALLER\TallerMecanicoConfiable\MecanicoConfiable.App.Dominio\bin\Debug\net6.0\MecanicoConfiable.App.Dominio.pdb
+C:\C#\TALLER\TallerMecanicoConfiable\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\MecanicoConfiable.App.Dominio.csproj.AssemblyReference.cache
+C:\C#\TALLER\TallerMecanicoConfiable\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\MecanicoConfiable.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\C#\TALLER\TallerMecanicoConfiable\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\MecanicoConfiable.App.Dominio.AssemblyInfoInputs.cache
+C:\C#\TALLER\TallerMecanicoConfiable\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\MecanicoConfiable.App.Dominio.AssemblyInfo.cs
+C:\C#\TALLER\TallerMecanicoConfiable\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\MecanicoConfiable.App.Dominio.csproj.CoreCompileInputs.cache
+C:\C#\TALLER\TallerMecanicoConfiable\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\MecanicoConfiable.App.Dominio.dll
+C:\C#\TALLER\TallerMecanicoConfiable\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\refint\MecanicoConfiable.App.Dominio.dll
+C:\C#\TALLER\TallerMecanicoConfiable\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\MecanicoConfiable.App.Dominio.pdb
+C:\C#\TALLER\TallerMecanicoConfiable\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\ref\MecanicoConfiable.App.Dominio.dll
