@@ -1,7 +1,18 @@
+using System.Runtime.Serialization;
+using System.Net.Security;
 using MecanicoConfiable.App.Persistencia;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddAuthentication("MyCookieAuth").AddCookie("MyCookieAuth",options => {
+    options.Cookie.Name = "MyCookieAuth";
+    options.LoginPath = "/Account/LoginAdm";
+    options.AccessDeniedPath = "/Account/AccessDenied";
+});
+builder.Services.AddAuthorization(options => {
 
+   options.AddPolicy("AdminOnly",policy => policy.RequireClaim("Admin"));
+   options.AddPolicy("MustBelongADDepartment",policy => policy.RequireClaim("Department","AD"));
+});
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddSingleton <IRepositorioPersonal, RepositorioPersonal>();
@@ -22,7 +33,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapRazorPages();

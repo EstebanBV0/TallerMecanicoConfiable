@@ -1,0 +1,49 @@
+﻿@page
+@model LoginAdmModel
+@{
+}
+ 
+<div class = "container border" style = "padding: 20px">
+    <form method="post">
+        <div class="text-danger" asp-validation-summary = "ModelOnly"></div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="Credenciales.UserName"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for ="Credenciales.UserName" class="form-control"/>
+            </div>
+            <span class="text-danger" asp-validation-for = "Credenciales.UserName"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="Credenciales.Password"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for ="Credenciales.Password" class="form-control" type="password"/>
+            </div>
+            <span class="text-danger" asp-validation-for = "Credenciales.Password" ></span>
+
+        </div>
+        <div class="form-group row">
+    
+            <div class="col-5">
+                <input type="submit"  class="btn btn-primary" value="Login"/>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+</div>

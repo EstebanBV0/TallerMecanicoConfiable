@@ -2,8 +2,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MecanicoConfiable.App.Persistencia;
 using MecanicoConfiable.App.Dominio;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace MecanicoConfiable.App.Servicios;
+
+[Authorize(Policy = "MustBelongADDepartment")]
 
 public class MecanicoModel : PageModel
 {

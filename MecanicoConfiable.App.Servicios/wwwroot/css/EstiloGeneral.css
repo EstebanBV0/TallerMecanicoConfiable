@@ -1,0 +1,21 @@
+body{
+    background-color: antiquewhite;
+}
+
+header{
+    margin: -22px;
+    height: 75px;
+    width: 1363px;
+    background-color: #202124;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+footer{
+    margin: -570px;
+    background-color: #202124; 
+    height: 180px;
+    width: 1351px; 
+    text-align: center;
+    margin-left: -10px;
+}
