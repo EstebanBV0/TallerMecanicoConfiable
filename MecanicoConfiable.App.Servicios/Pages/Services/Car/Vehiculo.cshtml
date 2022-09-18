@@ -27,10 +27,7 @@
                 <option value="FAMILIAR">FAMILIAR</option>
             </select>
         </div>
-        <!--<div class="mb-3">
-            <label for="tipo" class="form-label">Tipo</label>
-            <input asp-for="Vehiculo.Tipo"  class="form-control form-control-sm" id="tipo"  />
-        </div>-->
+
         <div class="mb-3">
             <label for="marca" class="form-label">Marca</label>
             <input asp-for="Vehiculo.Marca"  class="form-control form-control-sm" id="marca"  />
@@ -52,13 +49,13 @@
             <label for="descripcion" class="form-label">Descripcion Adicional</label>
             <input asp-for="Vehiculo.DescripcionAdicional"  class="form-control form-control-sm" id="descripcion"  />
         </div>
-        <div class="mb-3">
+        @*<div class="mb-3">
             <label for="seguro" class="form-label">Seguro</label>
             <input asp-for="Vehiculo.Seguro"  class="form-control form-control-sm" id="seguro"  />
-        </div>
+        </div>*@
         <div class="mb-3">
-            <label for="dueño" class="form-label">Propietario</label>
-            <input asp-for="Vehiculo.Dueño"  class="form-control form-control-sm" id="dueño"  />
+            @*<label for="dueño" class="form-label">Propietario</label>*@
+            <input type="hidden" value="1" asp-for="Vehiculo.Dueño"  class="form-control form-control-sm" id="dueño"  />
         </div>
         @* <div class="mb-3">
             <label for="dueño" class="form-label">Conductor </label>
@@ -73,8 +70,8 @@
             <input asp-for="Vehiculo.Dueño"  class="form-control form-control-sm" id="dueño"  />
         </div> *@
         <div class="mb-3">
-            <label for="mecanico" class="form-label">Mecanico</label>
-            <input asp-for="Vehiculo.IdMecanico"  class="form-control form-control-sm" id="mecha" />
+            @*<label for="mecanico" class="form-label">Mecanico</label>*@
+            <input type="hidden" value="1" asp-for="Vehiculo.IdMecanico"  class="form-control form-control-sm" id="mecha" />
         </div>
           
         <button type="submit" class = "btn btn-primary">Guardar</button>  
