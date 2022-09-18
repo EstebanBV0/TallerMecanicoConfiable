@@ -1,0 +1,49 @@
+@page "{handler?}"
+@model ListNivelesModel
+@{
+    ViewData["Title"] = "Listadueño";
+}
+
+<h1>  Vehiculos Actualmente</h1>
+<a asp-page="/Services/Services" class="btn-defaoult">Volver</a>
+<table class="table mt-5 mb-3">
+
+    <thead>
+      <tr>
+        <!--<th>ID</th>-->
+        <th>ID</th>
+        <!--<th>Tipo</th>-->
+        <th>fECHA</th>
+        <!--<th>Direccion</th>
+        <th>Número de Teléfono</th>
+        <th>Email</th>
+        <th>Ciudad</th>-->
+        
+      </tr>
+    </thead>
+    @foreach (var nivel in Model.Niveles)
+    {
+        <tr>
+            <!--<td>vehiculo.IdVehiculo</td>-->
+            <td>@nivel.IdNiveles</td>
+            <!--<td>vehiculo.Tipo</td>-->
+            <td>@nivel.FechaHora</td>
+            <!--<td>vehiculo.Modelo</td>-->
+            <!--<td>vehiculo.NumeroPasajeros</td>-->
+            <!--<td>vehiculo.PaisOrigen</td>-->
+            <!--<td>vehiculo.DescripcionAdicional</td>-->
+            <!--<td>vehiculo.Dueño</td>
+            <td>vehiculo.Mecanico</td>-->
+            
+            <td>
+              <a class="btn btn-primary table-btn" asp-page="./EditVehiculo" asp-route-IdNiveles = "@nivel.IdNiveles">Editar</a>
+              <a class="btn btn-primary table-btn" asp-page="./DeleteVehiculo" asp-route-IdNiveles = "@nivel.IdNiveles">Eliminar</a>
+              <a class="btn btn-primary table-btn" asp-page="./DetailVehiculo" asp-route-IdNiveles = "@nivel.IdNiveles">Detalle</a>
+              
+
+
+            </td>
+
+        </tr>
+    }
+</table>

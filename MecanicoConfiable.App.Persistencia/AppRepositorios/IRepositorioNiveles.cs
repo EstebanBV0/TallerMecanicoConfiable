@@ -14,7 +14,7 @@ namespace MecanicoConfiable.App.Persistencia
 
         RevisionNiveles GetNivelesId (int IdNiveles);
 
-        RevisionNiveles GetVehiculoPlaca (string Placa);
+        //RevisionNiveles GetVehiculoPlaca (string Placa);
 
         //RevisionNiveles AddMechanic (Vehiculo MechanicUpdate);
 

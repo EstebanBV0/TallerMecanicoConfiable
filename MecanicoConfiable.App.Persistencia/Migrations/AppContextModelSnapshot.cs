@@ -39,8 +39,8 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("FechaNacimiento")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("FechaNacimiento")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Nombre")
                         .HasColumnType("nvarchar(max)");
@@ -61,53 +61,22 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdCambioRepuesto"), 1L, 1);
 
-                    b.Property<string>("FechaHora")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("FechaHora")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("IdRepuesto")
+                        .HasColumnType("int");
 
                     b.Property<int>("IdVehiculo")
                         .HasColumnType("int");
 
                     b.HasKey("IdCambioRepuesto");
 
+                    b.HasIndex("IdRepuesto");
+
                     b.HasIndex("IdVehiculo");
 
                     b.ToTable("CambioRepuestos");
-                });
-
-            modelBuilder.Entity("MecanicoConfiable.App.Dominio.Conductor", b =>
-                {
-                    b.Property<int>("IdConductor")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdConductor"), 1L, 1);
-
-                    b.Property<string>("Apellido")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Ciudad")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FechaNacimiento")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("IdVehiculo")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Nombre")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NumeroTelefono")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("IdConductor");
-
-                    b.HasIndex("IdVehiculo");
-
-                    b.ToTable("Conductor");
                 });
 
             modelBuilder.Entity("MecanicoConfiable.App.Dominio.Dueño", b =>
@@ -127,11 +96,8 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("FechaNacimiento")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("IdVehiculo")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("FechaNacimiento")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Nombre")
                         .HasColumnType("nvarchar(max)");
@@ -140,8 +106,6 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IdDueño");
-
-                    b.HasIndex("IdVehiculo");
 
                     b.ToTable("Dueños");
                 });
@@ -160,8 +124,8 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
                     b.Property<string>("Direccion")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("FechaNacimiento")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("FechaNacimiento")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("NivelEstudio")
                         .HasColumnType("nvarchar(max)");
@@ -185,18 +149,13 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdRepuesto"), 1L, 1);
 
-                    b.Property<int>("IdCambioRepuesto")
+                    b.Property<string>("Nombre")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Valor")
                         .HasColumnType("int");
 
-                    b.Property<string>("Repuest")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Valor")
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("IdRepuesto");
-
-                    b.HasIndex("IdCambioRepuesto");
 
                     b.ToTable("Repuestos");
                 });
@@ -209,23 +168,23 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdNiveles"), 1L, 1);
 
-                    b.Property<string>("FechaHora")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("FechaHora")
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("IdVehiculo")
                         .HasColumnType("int");
 
-                    b.Property<string>("NivelAceite")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("NivelAceite")
+                        .HasColumnType("int");
 
-                    b.Property<string>("NivelLiquidDireccion")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("NivelLiquidDireccion")
+                        .HasColumnType("int");
 
-                    b.Property<string>("NivelLiquidoFrenos")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("NivelLiquidoFrenos")
+                        .HasColumnType("int");
 
-                    b.Property<string>("NivelRefrigerante")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("NivelRefrigerante")
+                        .HasColumnType("int");
 
                     b.HasKey("IdNiveles");
 
@@ -237,24 +196,32 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
             modelBuilder.Entity("MecanicoConfiable.App.Dominio.Seguro", b =>
                 {
                     b.Property<int>("IdSeguro")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("FechaCompra")
-                        .HasColumnType("nvarchar(max)");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdSeguro"), 1L, 1);
 
-                    b.Property<string>("FechaFinal")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("FechaCompra")
+                        .HasColumnType("datetime2");
 
-                    b.Property<string>("FechaInicial")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("FechaFinal")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("FechaInicial")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("IdVehiculo")
+                        .HasColumnType("int");
 
                     b.Property<string>("TipoSeguro")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ValorSeguro")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("ValorSeguro")
+                        .HasColumnType("int");
 
                     b.HasKey("IdSeguro");
+
+                    b.HasIndex("IdVehiculo");
 
                     b.ToTable("Seguros");
                 });
@@ -269,6 +236,9 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
 
                     b.Property<string>("DescripcionAdicional")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("IdDueño")
+                        .HasColumnType("int");
 
                     b.Property<int>("IdMecanico")
                         .HasColumnType("int");
@@ -293,6 +263,8 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
 
                     b.HasKey("IdVehiculo");
 
+                    b.HasIndex("IdDueño");
+
                     b.HasIndex("IdMecanico");
 
                     b.ToTable("Vehiculos");
@@ -300,50 +272,27 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
 
             modelBuilder.Entity("MecanicoConfiable.App.Dominio.CambioRepuesto", b =>
                 {
+                    b.HasOne("MecanicoConfiable.App.Dominio.Repuesto", "Repuesto")
+                        .WithMany()
+                        .HasForeignKey("IdRepuesto")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("MecanicoConfiable.App.Dominio.Vehiculo", "Vehiculo")
-                        .WithMany("CambioRepuesto")
+                        .WithMany()
                         .HasForeignKey("IdVehiculo")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Vehiculo");
-                });
-
-            modelBuilder.Entity("MecanicoConfiable.App.Dominio.Conductor", b =>
-                {
-                    b.HasOne("MecanicoConfiable.App.Dominio.Vehiculo", "Vehiculo")
-                        .WithMany("Conductor")
-                        .HasForeignKey("IdVehiculo")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("Repuesto");
 
                     b.Navigation("Vehiculo");
-                });
-
-            modelBuilder.Entity("MecanicoConfiable.App.Dominio.Dueño", b =>
-                {
-                    b.HasOne("MecanicoConfiable.App.Dominio.Vehiculo", "Vehiculo")
-                        .WithMany("Dueño")
-                        .HasForeignKey("IdVehiculo");
-
-                    b.Navigation("Vehiculo");
-                });
-
-            modelBuilder.Entity("MecanicoConfiable.App.Dominio.Repuesto", b =>
-                {
-                    b.HasOne("MecanicoConfiable.App.Dominio.CambioRepuesto", "CambioRepuesto")
-                        .WithMany("Repuestos")
-                        .HasForeignKey("IdCambioRepuesto")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("CambioRepuesto");
                 });
 
             modelBuilder.Entity("MecanicoConfiable.App.Dominio.RevisionNiveles", b =>
                 {
                     b.HasOne("MecanicoConfiable.App.Dominio.Vehiculo", "Vehiculo")
-                        .WithMany("RevisionNiveles")
+                        .WithMany()
                         .HasForeignKey("IdVehiculo")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -354,8 +303,8 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
             modelBuilder.Entity("MecanicoConfiable.App.Dominio.Seguro", b =>
                 {
                     b.HasOne("MecanicoConfiable.App.Dominio.Vehiculo", "Vehiculo")
-                        .WithOne("Seguro")
-                        .HasForeignKey("MecanicoConfiable.App.Dominio.Seguro", "IdSeguro")
+                        .WithMany()
+                        .HasForeignKey("IdVehiculo")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -364,36 +313,21 @@ namespace MecanicoConfiable.App.Persistencia.Migrations
 
             modelBuilder.Entity("MecanicoConfiable.App.Dominio.Vehiculo", b =>
                 {
+                    b.HasOne("MecanicoConfiable.App.Dominio.Dueño", "Dueño")
+                        .WithMany()
+                        .HasForeignKey("IdDueño")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("MecanicoConfiable.App.Dominio.Mecanico", "Mecanico")
-                        .WithMany("Vehiculo")
+                        .WithMany()
                         .HasForeignKey("IdMecanico")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Mecanico");
-                });
-
-            modelBuilder.Entity("MecanicoConfiable.App.Dominio.CambioRepuesto", b =>
-                {
-                    b.Navigation("Repuestos");
-                });
-
-            modelBuilder.Entity("MecanicoConfiable.App.Dominio.Mecanico", b =>
-                {
-                    b.Navigation("Vehiculo");
-                });
-
-            modelBuilder.Entity("MecanicoConfiable.App.Dominio.Vehiculo", b =>
-                {
-                    b.Navigation("CambioRepuesto");
-
-                    b.Navigation("Conductor");
-
                     b.Navigation("Dueño");
 
-                    b.Navigation("RevisionNiveles");
-
-                    b.Navigation("Seguro");
+                    b.Navigation("Mecanico");
                 });
 #pragma warning restore 612, 618
         }

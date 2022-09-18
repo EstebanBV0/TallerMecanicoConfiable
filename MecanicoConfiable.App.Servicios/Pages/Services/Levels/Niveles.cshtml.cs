@@ -7,7 +7,7 @@ namespace MecanicoConfiable.App.Servicios;
 
 public class NivelesModel : PageModel
 {
-    private static IRepositorioVehiculo _repoVehiculo = new RepositorioVehiculo(new Persistencia.AppContext());
+    private static IRepositorioNiveles _reponiveles = new RepositorioNiveles(new Persistencia.AppContext());
 
     private readonly ILogger<NivelesModel> _logger;
 
@@ -17,15 +17,15 @@ public class NivelesModel : PageModel
     }
 
     [BindProperty]
-    public Vehiculo Vehiculo { get; set; }
+    public RevisionNiveles Niveles { get; set; }
       public  IActionResult OnPost( )
         {
             if (!ModelState.IsValid)
             {
-                return RedirectToPage("./ListVehiculo");
+                return RedirectToPage("./ListNiveles");
             }
-            if (Vehiculo != null) _repoVehiculo.AddVehiculo(Vehiculo);
-            return RedirectToPage("./ListVehiculo");
+            if (Niveles != null) _reponiveles.AddNiveles(Niveles);
+            return RedirectToPage("./ListNiveles");
             
         } 
 }

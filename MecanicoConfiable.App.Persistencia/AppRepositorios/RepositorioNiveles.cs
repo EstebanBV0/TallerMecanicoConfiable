@@ -23,7 +23,7 @@ namespace MecanicoConfiable.App.Persistencia
     }
      IEnumerable<RevisionNiveles> IRepositorioNiveles.GetAll(){
 
-        return _appContext.Niveles;
+        return _appContext.RevisionNiveles;
 
       }
 
@@ -38,11 +38,11 @@ namespace MecanicoConfiable.App.Persistencia
 
       RevisionNiveles IRepositorioNiveles.GetNivelesId(int IdNiveles)
         {
-        return _appContext.RevisionNiveles.SingleOrDefault(p => p.IdVehiculo == IdVehiculo);
+        return _appContext.RevisionNiveles.SingleOrDefault(p => p.IdNiveles == IdNiveles);
 
         }
 
-   Vehiculo IRepositorioVehiculo.GetVehiculoPlaca(string Placa)
+   /*Vehiculo IRepositorioVehiculo.GetVehiculoPlaca(string Placa)
         {
         return _appContext.Vehiculos.SingleOrDefault(p => p.Placa == Placa);
 
@@ -59,39 +59,32 @@ namespace MecanicoConfiable.App.Persistencia
             }
             return vehiculo;
         }
-    
+    */
 
-    public Vehiculo UpdateVehiculo(Vehiculo vehiculoActualizado)
+    public RevisionNiveles UpdateNiveles(RevisionNiveles nivelesActualizados)
         {
-            Vehiculo vehiculo = _appContext.Vehiculos.SingleOrDefault(p => p.IdVehiculo == vehiculoActualizado.IdVehiculo);
-            if (vehiculo != null)
+            RevisionNiveles niveles = _appContext.RevisionNiveles.SingleOrDefault(p => p.IdNiveles == nivelesActualizados.IdNiveles);
+            if (niveles != null)
             {
-                vehiculo.Placa = vehiculoActualizado.Placa;
-                vehiculo.Tipo = vehiculoActualizado.Tipo;
-                vehiculo.Marca = vehiculoActualizado.Marca;
-                vehiculo.Modelo = vehiculoActualizado.Modelo;
-                vehiculo.NumeroPasajeros= vehiculoActualizado.NumeroPasajeros;
-                vehiculo.PaisOrigen = vehiculoActualizado.PaisOrigen;
-                vehiculo.DescripcionAdicional = vehiculoActualizado.DescripcionAdicional;
-                //vehiculo.Seguro = vehiculoActualizado.Seguro;
-                vehiculo.IdDueño = vehiculoActualizado.IdDueño;
-                //vehiculo.Conductor = vehiculoActualizado.Conductor;
-                //vehiculo.RevisionNiveles = vehiculoActualizado.RevisionNiveles;
-                //vehiculo.CambioRepuesto = vehiculoActualizado.CambioRepuesto;
-                vehiculo.IdMecanico = vehiculoActualizado.IdMecanico;
-
+                niveles.FechaHora = nivelesActualizados.FechaHora;
+                niveles.NivelAceite = nivelesActualizados.NivelAceite;
+                niveles.NivelLiquidoFrenos = nivelesActualizados.NivelLiquidoFrenos;
+                niveles.NivelRefrigerante = nivelesActualizados.NivelRefrigerante;
+                niveles.NivelLiquidDireccion= nivelesActualizados.NivelLiquidDireccion;
+                niveles.IdVehiculo = nivelesActualizados.IdVehiculo;
+               
                 _appContext.SaveChanges();
             }
-            return vehiculo;
+            return niveles;
         }
 
-    public Vehiculo DeleteVehiculo(int IdVehiculo)
+    public RevisionNiveles DeleteNiveles(int IdNiveles)
         {
-            var vehiculoEncontrado = _appContext.Vehiculos.FirstOrDefault(p => p.IdVehiculo == IdVehiculo);
+            var nivelesEncontrados = _appContext.RevisionNiveles.FirstOrDefault(p => p.IdNiveles == IdNiveles);
             
-            _appContext.Vehiculos.Remove(vehiculoEncontrado);
+            _appContext.RevisionNiveles.Remove(nivelesEncontrados);
             _appContext.SaveChanges();
-            return vehiculoEncontrado;
+            return nivelesEncontrados;
         }
     }
 }

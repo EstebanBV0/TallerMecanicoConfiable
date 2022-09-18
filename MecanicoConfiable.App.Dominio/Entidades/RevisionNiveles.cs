@@ -10,7 +10,7 @@ namespace MecanicoConfiable.App.Dominio
         [Key]
         public int IdNiveles { get; set; }
         public DateTime FechaHora { get; set; }
-        public DateTime NivelAceite { get; set; }
+        public int NivelAceite { get; set; }
         public int NivelLiquidoFrenos { get; set; }
         public int NivelRefrigerante { get; set; }
         public int NivelLiquidDireccion { get; set; }
