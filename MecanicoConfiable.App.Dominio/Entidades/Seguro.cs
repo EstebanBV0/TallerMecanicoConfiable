@@ -7,14 +7,16 @@ namespace MecanicoConfiable.App.Dominio
 {
     public class Seguro
     {
-        [Key, ForeignKey ("Vehiculo")]
+        [Key]
         public int IdSeguro { get; set; }
         public string TipoSeguro { get; set; }
-        public string FechaCompra { get; set; }
-        public string FechaInicial { get; set; }
-        public string FechaFinal { get; set; }
-        public string ValorSeguro { get; set; }
+        public DateTime FechaCompra { get; set; }
+        public DateTime FechaInicial { get; set; }
+        public DateTime FechaFinal { get; set; }
+        public int ValorSeguro { get; set; }
 
+        [ForeignKey ( "Vehiculo" )]
+        public int IdVehiculo { get; set; }
         public virtual Vehiculo Vehiculo { get; set; }
 
     }

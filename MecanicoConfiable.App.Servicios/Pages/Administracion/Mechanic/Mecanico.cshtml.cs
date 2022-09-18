@@ -5,9 +5,10 @@ using MecanicoConfiable.App.Dominio;
 using Microsoft.AspNetCore.Authorization;
 
 
+
 namespace MecanicoConfiable.App.Servicios;
 
-[Authorize(Policy = "MustBelongADDepartment")]
+//[Authorize(Policy = "MustBelongADDepartment")]
 
 public class MecanicoModel : PageModel
 {

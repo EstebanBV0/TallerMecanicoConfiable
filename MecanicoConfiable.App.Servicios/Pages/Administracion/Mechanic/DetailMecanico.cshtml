@@ -1,0 +1,72 @@
+@page 
+@model DetailMecanicoModel
+
+@{
+}
+<h2>Detalle de Mecanico : @Model.Mecanico.Nombre</h2>
+<a class="btn-defaoult" asp-page ="./ListMecanicos">Volver</a>
+
+<table class="table mt-5 mb-3"> 
+    <thead>
+      <tr>
+        <th>ID</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Mecanico.IdMecanico</td>
+    </tr>
+        <thead>
+      <tr>
+        <th>Nombre</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Mecanico.Nombre</td>
+    </tr>
+
+        <thead>
+      <tr>
+        <th>Apellido</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Mecanico.Apellido</td>
+    </tr>
+        <thead>
+      <tr>
+        <th>Teléfono</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Mecanico.NumeroTelefono</td>
+    </tr>
+
+        <thead>
+      <tr>
+        <th>Fecha de Nacimiento</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Mecanico.FechaNacimiento</td>
+    </tr>
+        <thead>
+      <tr>
+        <th>Direccion</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Mecanico.Direccion</td>
+    </tr>
+
+        <thead>
+      <tr>
+        <th>Nivel Academico</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Mecanico.NivelEstudio</td>
+    </tr>
+        
+
+
+</table>

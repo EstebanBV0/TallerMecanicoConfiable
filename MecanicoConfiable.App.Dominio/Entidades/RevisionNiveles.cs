@@ -9,11 +9,11 @@ namespace MecanicoConfiable.App.Dominio
     {
         [Key]
         public int IdNiveles { get; set; }
-        public string FechaHora { get; set; }
-        public string NivelAceite { get; set; }
-        public string NivelLiquidoFrenos { get; set; }
-        public string NivelRefrigerante { get; set; }
-        public string NivelLiquidDireccion { get; set; }
+        public DateTime FechaHora { get; set; }
+        public DateTime NivelAceite { get; set; }
+        public int NivelLiquidoFrenos { get; set; }
+        public int NivelRefrigerante { get; set; }
+        public int NivelLiquidDireccion { get; set; }
     
         [ForeignKey ( "Vehiculo" )]
         public int IdVehiculo { get; set; }

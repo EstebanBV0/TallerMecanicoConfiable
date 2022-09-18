@@ -64,11 +64,11 @@
         <div class="mb-3">
             <label for="dueño" class="form-label">Revision de Niveles</label>
             <input asp-for="Vehiculo.Dueño"  class="form-control form-control-sm" id="dueño"  />
-        </div>
+        </div>*@
         <div class="mb-3">
-            <label for="dueño" class="form-label">Cambio de Repuesto</label>
-            <input asp-for="Vehiculo.Dueño"  class="form-control form-control-sm" id="dueño"  />
-        </div> *@
+            @*<label  for="dueño" class="form-label">Cambio de Repuesto</label>*@
+            <input type="hidden" value="1" asp-for="Vehiculo.IdDueño"  class="form-control form-control-sm" id="dueño"  />
+        </div> 
         <div class="mb-3">
             @*<label for="mecanico" class="form-label">Mecanico</label>*@
             <input type="hidden" value="1" asp-for="Vehiculo.IdMecanico"  class="form-control form-control-sm" id="mecha" />

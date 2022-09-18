@@ -10,6 +10,6 @@ namespace MecanicoConfiable.App.Dominio
     
         public string NumeroTelefono { get; set; }
     
-        public string FechaNacimiento { get; set; }
+        public DateTime FechaNacimiento { get; set; }
     }
 }

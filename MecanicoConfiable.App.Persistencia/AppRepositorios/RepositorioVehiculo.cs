@@ -73,11 +73,11 @@ namespace MecanicoConfiable.App.Persistencia
                 vehiculo.NumeroPasajeros= vehiculoActualizado.NumeroPasajeros;
                 vehiculo.PaisOrigen = vehiculoActualizado.PaisOrigen;
                 vehiculo.DescripcionAdicional = vehiculoActualizado.DescripcionAdicional;
-                vehiculo.Seguro = vehiculoActualizado.Seguro;
-                vehiculo.Dueño = vehiculoActualizado.Dueño;
-                vehiculo.Conductor = vehiculoActualizado.Conductor;
-                vehiculo.RevisionNiveles = vehiculoActualizado.RevisionNiveles;
-                vehiculo.CambioRepuesto = vehiculoActualizado.CambioRepuesto;
+                //vehiculo.Seguro = vehiculoActualizado.Seguro;
+                vehiculo.IdDueño = vehiculoActualizado.IdDueño;
+                //vehiculo.Conductor = vehiculoActualizado.Conductor;
+                //vehiculo.RevisionNiveles = vehiculoActualizado.RevisionNiveles;
+                //vehiculo.CambioRepuesto = vehiculoActualizado.CambioRepuesto;
                 vehiculo.IdMecanico = vehiculoActualizado.IdMecanico;
 
                 _appContext.SaveChanges();
