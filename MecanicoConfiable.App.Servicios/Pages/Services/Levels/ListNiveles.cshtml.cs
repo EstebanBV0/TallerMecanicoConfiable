@@ -17,7 +17,7 @@ public class ListNivelesModel : PageModel
     }
 
     [BindProperty]
-    public IEnumerable<RevisionNiveles> Niveles { get; set; }
+    public IEnumerable<LisFullNivels> Niveles { get; set; }
       public  void OnGet( )
         {
          Niveles = _repoNiveles.GetAll();

@@ -21,9 +21,18 @@ namespace MecanicoConfiable.App.Persistencia
         _appContext.SaveChanges();
         return nivelesAdicionados.Entity;
     }
-     IEnumerable<RevisionNiveles> IRepositorioNiveles.GetAll(){
+     IEnumerable<LisFullNivels> IRepositorioNiveles.GetAll(){
 
-        return _appContext.RevisionNiveles;
+
+           var  query =     from a in _appContext.RevisionNiveles
+                            join s in _appContext.Vehiculos on a.IdVehiculo equals s.IdVehiculo
+                            select new LisFullNivels { 
+                            IdNiveles = a.IdNiveles, 
+                            IdVehiculo = a.IdVehiculo, 
+                            FechaHora = a.FechaHora, 
+                            Placa = s.Placa };
+
+            return query.ToList();
 
       }
 

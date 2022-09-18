@@ -10,14 +10,11 @@
 
     <thead>
       <tr>
-        <!--<th>ID</th>-->
-        <th>ID</th>
-        <!--<th>Tipo</th>-->
-        <th>fECHA</th>
-        <!--<th>Direccion</th>
-        <th>Número de Teléfono</th>
-        <th>Email</th>
-        <th>Ciudad</th>-->
+        <th>ID Revisión</th>
+        <th>Fecha</th>
+        <th>ID Vehiculo</th>
+        <th>Placa</th>
+     
         
       </tr>
     </thead>
@@ -34,7 +31,8 @@
             <!--<td>vehiculo.DescripcionAdicional</td>-->
             <!--<td>vehiculo.Dueño</td>
             <td>vehiculo.Mecanico</td>-->
-            
+            <td>@nivel.IdVehiculo</td>
+            <td>@nivel.Placa</td>
             <td>
               <a class="btn btn-primary table-btn" asp-page="./EditNiveles" asp-route-IdNiveles = "@nivel.IdNiveles">Editar</a>
               <a class="btn btn-primary table-btn" asp-page="./DeleteNiveles" asp-route-IdNiveles = "@nivel.IdNiveles">Eliminar</a>

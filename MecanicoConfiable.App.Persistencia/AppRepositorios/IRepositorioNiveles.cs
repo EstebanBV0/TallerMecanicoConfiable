@@ -9,7 +9,7 @@ namespace MecanicoConfiable.App.Persistencia
  
         RevisionNiveles UpdateNiveles(RevisionNiveles nivelesAcatualizados);
 
-        IEnumerable<RevisionNiveles> GetAll();
+        IEnumerable<LisFullNivels> GetAll();
         IEnumerable<RevisionNiveles> GetAllForVehiculo(int IdVehiculo);
 
         RevisionNiveles GetNivelesId (int IdNiveles);
