@@ -1,0 +1,71 @@
+@page 
+@model DetailDueñoModel
+
+@{
+}
+<h2>Detalle de Vehiculo Placa: @Model.Dueño.Nombre</h2>
+<a class="btn-defaoult" asp-page ="./ListDueño">Volver</a>
+
+<table class="table mt-5 mb-3"> 
+    <thead>
+      <tr>
+        <th>ID</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Dueño.IdDueño</td>
+    </tr>
+        <thead>
+      <tr>
+        <th>Nombre</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Dueño.Nombre</td>
+    </tr>
+
+        <thead>
+      <tr>
+        <th>Apellido</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Dueño.Apellido</td>
+    </tr>
+        <thead>
+      <tr>
+        <th>Telefono</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Dueño.NumeroTelefono</td>
+    </tr>
+
+        <thead>
+      <tr>
+        <th>Fecha de Nacimiento</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Dueño.FechaNacimiento</td>
+    </tr>
+        <thead>
+      <tr>
+        <th>Ciudad</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Dueño.Ciudad</td>
+    </tr>
+
+        <thead>
+      <tr>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Dueño.Email</td>
+    </tr>       
+
+
+</table>
