@@ -7,7 +7,7 @@ namespace MecanicoConfiable.App.Servicios;
 
 public class ListNivelesModel : PageModel
 {
-    private readonly IRepositorioNiveles _repoVehiculo = new RepositorioNiveles(new Persistencia.AppContext());
+    private readonly IRepositorioNiveles _repoNiveles = new RepositorioNiveles(new Persistencia.AppContext());
 
     private readonly ILogger<ListNivelesModel> _logger;
 
@@ -20,6 +20,6 @@ public class ListNivelesModel : PageModel
     public IEnumerable<RevisionNiveles> Niveles { get; set; }
       public  void OnGet( )
         {
-         Niveles = _repoVehiculo.GetAll();
+         Niveles = _repoNiveles.GetAll();
         } 
 }

@@ -1,0 +1,15 @@
+﻿@page
+@model DeleteNiveles
+@{
+}
+<h1>Borrado de confirmación</h1>
+
+<a class="btn btn-primary" asp-page ="/Services/Levels/ListNiveles">Lista</a>
+
+<div class="alet alet-danger">
+   <h5>Esta seguro que deseaborrar La revisión de niveles del vehiculo con placa @Model.Vehiculo.Placa </h5>
+    <form method="post">
+      <button type="submit" class="btn btn-danger">Si</button>
+      <a class="btn btn-primary" asp-page ="/Services/Levels/ListNiveles">No</a>
+    </form>
+</div>

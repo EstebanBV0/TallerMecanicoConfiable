@@ -1,10 +1,10 @@
 @page "{handler?}"
 @model ListNivelesModel
 @{
-    ViewData["Title"] = "Listadueño";
+    ViewData["Title"] = "Listado Niveles";
 }
 
-<h1>  Vehiculos Actualmente</h1>
+<h1>  Revisiones de niveles Hechas</h1>
 <a asp-page="/Services/Services" class="btn-defaoult">Volver</a>
 <table class="table mt-5 mb-3">
 
@@ -36,12 +36,9 @@
             <td>vehiculo.Mecanico</td>-->
             
             <td>
-              <a class="btn btn-primary table-btn" asp-page="./EditVehiculo" asp-route-IdNiveles = "@nivel.IdNiveles">Editar</a>
-              <a class="btn btn-primary table-btn" asp-page="./DeleteVehiculo" asp-route-IdNiveles = "@nivel.IdNiveles">Eliminar</a>
-              <a class="btn btn-primary table-btn" asp-page="./DetailVehiculo" asp-route-IdNiveles = "@nivel.IdNiveles">Detalle</a>
-              
-
-
+              <a class="btn btn-primary table-btn" asp-page="./EditNiveles" asp-route-IdNiveles = "@nivel.IdNiveles">Editar</a>
+              <a class="btn btn-primary table-btn" asp-page="./DeleteNiveles" asp-route-IdNiveles = "@nivel.IdNiveles">Eliminar</a>
+              <a class="btn btn-primary table-btn" asp-page="./DetailRevision" asp-route-IdVehiculo = "@nivel.IdVehiculo">Detalle</a>
             </td>
 
         </tr>

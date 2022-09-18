@@ -1,0 +1,39 @@
+@page 
+@model EditNiveles
+
+@{
+}
+<h2>Edición de la revisión de niveles @Model.Niveles.IdNiveles</h2>
+
+<a class="btn btn-primary" asp-page ="/Services/Levels/ListNiveles">Volver</a>
+
+<form method="post">
+    <input type = "hidden" asp-for ="Niveles.IdNiveles"/>
+    <div class="form-group">
+        <label asp-for ="Niveles.NivelAceite"></label>
+        <input asp-for = "Niveles.NivelAceite" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for ="Niveles.NivelLiquidoFrenos"></label>
+        <input asp-for = "Niveles.NivelLiquidoFrenos" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for ="Niveles.NivelRefrigerante"></label>
+        <input asp-for = "Niveles.NivelRefrigerante" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for ="Niveles.NivelLiquidDireccion"></label>
+        <input asp-for = "Niveles.NivelLiquidDireccion" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for ="Niveles.IdVehiculo"></label>
+        <input asp-for = "Niveles.IdVehiculo" class="form-control">
+    </div>
+      <div class="form-group">
+        <label asp-for ="Niveles.FechaHora"></label>
+        <input asp-for = "Niveles.FechaHora" class="form-control">
+    </div>
+ 
+   <button type="submit" class="btn btn-primary">Guardar</button>
+   
+</form>

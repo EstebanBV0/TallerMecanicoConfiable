@@ -8,141 +8,153 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MecanicoConfiable.App.Servicios
 build_property.RootNamespace = MecanicoConfiable.App.Servicios
-build_property.ProjectDir = C:\C#\TALLER\TallerMecanicoConfiable\MecanicoConfiable.App.Servicios\
+build_property.ProjectDir = C:\Users\esbv1\OneDrive\Escritorio\C#\Respaldos F\TallerMecanicoConfiable\MecanicoConfiable.App.Servicios\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\C#\TALLER\TallerMecanicoConfiable\MecanicoConfiable.App.Servicios
+build_property.MSBuildProjectDirectory = C:\Users\esbv1\OneDrive\Escritorio\C#\Respaldos F\TallerMecanicoConfiable\MecanicoConfiable.App.Servicios
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Account/AccessDenied.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Account/LoginAdm.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Account/LoginAdm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbkFkbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Administrador.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Administrador.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYWNpb25cQWRtaW5pc3RyYWRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Auxiliar/Auxiliar.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Auxiliar/Auxiliar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYWNpb25cQXV4aWxpYXJcQXV4aWxpYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Auxiliar/ListAuxiliar.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Auxiliar/ListAuxiliar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYWNpb25cQXV4aWxpYXJcTGlzdEF1eGlsaWFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Mechanic/DeleteMecanico.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Mechanic/DeleteMecanico.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYWNpb25cTWVjaGFuaWNcRGVsZXRlTWVjYW5pY28uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Mechanic/DetailMecanico.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Mechanic/DetailMecanico.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYWNpb25cTWVjaGFuaWNcRGV0YWlsTWVjYW5pY28uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Mechanic/EditMecanico.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Mechanic/EditMecanico.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYWNpb25cTWVjaGFuaWNcRWRpdE1lY2FuaWNvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Mechanic/ListMecanicos.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Mechanic/ListMecanicos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYWNpb25cTWVjaGFuaWNcTGlzdE1lY2FuaWNvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Mechanic/Mecanico.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Mechanic/Mecanico.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYWNpb25cTWVjaGFuaWNcTWVjYW5pY28uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Owner/DeleteDueño.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Owner/DeleteDueño.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYWNpb25cT3duZXJcRGVsZXRlRHVlw7FvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Owner/DetailDueño.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Owner/DetailDueño.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYWNpb25cT3duZXJcRGV0YWlsRHVlw7FvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Owner/Dueño.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Owner/Dueño.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYWNpb25cT3duZXJcRHVlw7FvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Owner/EditDueño.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Owner/EditDueño.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYWNpb25cT3duZXJcRWRpdER1ZcOxby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Owner/ListDueño.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Administracion/Owner/ListDueño.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYWNpb25cT3duZXJcTGlzdER1ZcOxby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Error.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Index.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Operaciones.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Operaciones.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3BlcmFjaW9uZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Privacy.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Car/AddMecanico.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Car/AddMecanico.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcQ2FyXEFkZE1lY2FuaWNvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Car/DetailVehiculo.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Car/DetailVehiculo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcQ2FyXERldGFpbFZlaGljdWxvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Car/EditVehiculo.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Car/EditVehiculo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcQ2FyXEVkaXRWZWhpY3Vsby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Car/ListVehiculo.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Car/ListVehiculo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcQ2FyXExpc3RWZWhpY3Vsby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Car/Vehiculo.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Car/Vehiculo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcQ2FyXFZlaGljdWxvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Levels/ListNiveles.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Levels/DeleteNiveles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcTGV2ZWxzXERlbGV0ZU5pdmVsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Levels/DetailRevision.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcTGV2ZWxzXERldGFpbFJldmlzaW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Levels/EditNiveles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcTGV2ZWxzXEVkaXROaXZlbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Levels/ListNiveles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcTGV2ZWxzXExpc3ROaXZlbGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Levels/Niveles.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Levels/Niveles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcTGV2ZWxzXE5pdmVsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Services.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Services.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcU2VydmljZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/VehiculosAsignados/ListCarAsignados.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/VehiculosAsignados/ListCarAsignados.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcVmVoaWN1bG9zQXNpZ25hZG9zXExpc3RDYXJBc2lnbmFkb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/VehiculosAsignados/ListMechanics.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/VehiculosAsignados/ListMechanics.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcVmVoaWN1bG9zQXNpZ25hZG9zXExpc3RNZWNoYW5pY3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/_ViewImports.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/_ViewStart.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Shared/_Layout.cshtml]
+[C:/Users/esbv1/OneDrive/Escritorio/C\#/Respaldos F/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-krakwc6axq
