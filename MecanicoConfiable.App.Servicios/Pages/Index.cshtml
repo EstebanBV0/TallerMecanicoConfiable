@@ -4,7 +4,108 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
+@* <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div> *@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="text-center">
+        <h1 class="display-4"> Somos el Taller Mecanico Confiable </h1>   @* usando blazor para un llamado dinamico de datos*@
+        <h2> Mas que un taller de reparaciónes somos una familia en la cual puedes depositar tu confianza. </h2>
+    </div>
+
+        <div class="slider-frame">
+            <ul>
+                <li><img src="/imagenes/slider6.jpg" alt=""></li>
+                <li><img src="/imagenes/slider10.jpg" alt=""></li>
+                <li><img src="/imagenes/slider8.jpg" alt=""></li>
+                <li><img src="/imagenes/slider9.jpg" alt=""></li>
+            @*      <li><img src="/imagenes/slider11.jpg" alt=""></li>
+                <li><img src="/imagenes/slider12.jpg" alt=""></li>
+                <li><img src="/imagenes/slider13.jpg" alt=""></li> *@
+            </ul> 
+        </div>
+
+    <div class="row justify-content-center text-center bg-black">
+        <div class="col col-md-7 seccion-bienvenida">
+            <h1> Conoce un poco de nosotros</h1>
+            <p>
+                Fundado en 1980 el Taller Mecanico Confiable antes (Taller Sentinel) ha crecido
+                en fama y confianza gracias al trabajo constante de cada uno de nuestros empleados.
+                estamos hubicados en el centro del pais, en la región cafetera del Quindío.
+            </p>
+            <p>
+                Nuestra experiencia en diferentes tipos de automotores nos ha hecho conocidos en todo
+                el territorio nacional. Ademas, contamos con stock de repuestos importados directamente
+                del extranjero. Contando con los mejores distribuidores y la mejor calidad de estos.
+
+                <br> <br><br> <br>
+            </p>
+        </div>
+    </div>
+
+        
+    </div>
+    <div style="margin-top: -50px">
+
+    <div class="row justify-content-md-center text-center ">
+
+        <div class="col-3 bg-white habilidades" style="border-radius: 15px 0 0 15px; box-shadow: 0 5px 5px 0 gray">
+            <i class="bi bi-hdd-fill"></i>
+            <h3>Estetica</h3>
+            <p>
+               
+            </p>
+            <p class="text-primary cabecera">
+                Stack:
+            </p>
+            <p>
+                Latoneria y Pintura.
+            </p>
+            <p class="text-primary cabecera">
+                Experiencia:
+
+            </p>
+            <ul>
+                <li> Pintura eléctrica.  </li>
+                <li> Calcomanias y recubrimientos en carbono.  </li>
+                <li>  Tapizado en cuero. </li>          
+            </ul>
+        </div>
+
+        <div class="col-3 bg-white habilidades" style="border-radius: 0 15px 15px 0; box-shadow: 0 5px 5px 0 gray">
+            <i class="bi bi-file-code-fill"></i>
+            <h3> Mecanica Automotriz</h3>
+            <p> </p>
+            <p class="text-primary cabecera ">
+                Stack:
+            </p>
+            <p>
+                Mecanica general y repuestos.
+
+            </p>
+            <p class="text-primary cabecera">
+                Experiencia:
+
+            </p>
+            <ul>
+                <li> Mecanica vehiculos de carga.  </li>
+                <li> Mecanica vehiculos particulares y escolares.  </li>
+                <li> Contamos con repuestos originales. </li>
+            </ul>
+        </div>
+    </div>
+
+
 </div>
+    
+</body>
+</html>

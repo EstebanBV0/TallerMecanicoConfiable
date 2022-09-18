@@ -2011,35 +2011,37 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "C:\\Users\\esbv1\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\C#\\TALLER\\TallerMecanicoConfiable\\MecanicoConfiable.App.Servicios\\MecanicoConfiable.App.Servicios.csproj",
+      "projectUniqueName": "C:\\Users\\esbv1\\OneDrive\\Escritorio\\C#\\Respaldos F\\MecanicoConfiable.App.Servicios\\MecanicoConfiable.App.Servicios.csproj",
       "projectName": "MecanicoConfiable.App.Servicios",
-      "projectPath": "C:\\C#\\TALLER\\TallerMecanicoConfiable\\MecanicoConfiable.App.Servicios\\MecanicoConfiable.App.Servicios.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\C#\\TALLER\\TallerMecanicoConfiable\\MecanicoConfiable.App.Servicios\\obj\\",
+      "projectPath": "C:\\Users\\esbv1\\OneDrive\\Escritorio\\C#\\Respaldos F\\MecanicoConfiable.App.Servicios\\MecanicoConfiable.App.Servicios.csproj",
+      "packagesPath": "C:\\Users\\esbv1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\esbv1\\OneDrive\\Escritorio\\C#\\Respaldos F\\MecanicoConfiable.App.Servicios\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\esbv1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\C#\\TALLER\\TallerMecanicoConfiable\\MecanicoConfiable.App.Dominio\\MecanicoConfiable.App.Dominio.csproj": {
-              "projectPath": "C:\\C#\\TALLER\\TallerMecanicoConfiable\\MecanicoConfiable.App.Dominio\\MecanicoConfiable.App.Dominio.csproj"
+            "C:\\Users\\esbv1\\OneDrive\\Escritorio\\C#\\Respaldos F\\MecanicoConfiable.App.Dominio\\MecanicoConfiable.App.Dominio.csproj": {
+              "projectPath": "C:\\Users\\esbv1\\OneDrive\\Escritorio\\C#\\Respaldos F\\MecanicoConfiable.App.Dominio\\MecanicoConfiable.App.Dominio.csproj"
             },
-            "C:\\C#\\TALLER\\TallerMecanicoConfiable\\MecanicoConfiable.App.Persistencia\\MecanicoConfiable.App.Persistencia.csproj": {
-              "projectPath": "C:\\C#\\TALLER\\TallerMecanicoConfiable\\MecanicoConfiable.App.Persistencia\\MecanicoConfiable.App.Persistencia.csproj"
+            "C:\\Users\\esbv1\\OneDrive\\Escritorio\\C#\\Respaldos F\\MecanicoConfiable.App.Persistencia\\MecanicoConfiable.App.Persistencia.csproj": {
+              "projectPath": "C:\\Users\\esbv1\\OneDrive\\Escritorio\\C#\\Respaldos F\\MecanicoConfiable.App.Persistencia\\MecanicoConfiable.App.Persistencia.csproj"
             }
           }
         }
@@ -2080,7 +2082,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

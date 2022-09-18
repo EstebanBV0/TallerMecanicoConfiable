@@ -34,3 +34,15 @@ C:\C#\TALLER\TallerMecanicoConfiable\MecanicoConfiable.App.Dominio\obj\Debug\net
 C:\C#\TALLER\TallerMecanicoConfiable\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\refint\MecanicoConfiable.App.Dominio.dll
 C:\C#\TALLER\TallerMecanicoConfiable\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\MecanicoConfiable.App.Dominio.pdb
 C:\C#\TALLER\TallerMecanicoConfiable\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\ref\MecanicoConfiable.App.Dominio.dll
+C:\Users\esbv1\OneDrive\Escritorio\C#\Respaldos F\MecanicoConfiable.App.Dominio\bin\Debug\net6.0\MecanicoConfiable.App.Dominio.deps.json
+C:\Users\esbv1\OneDrive\Escritorio\C#\Respaldos F\MecanicoConfiable.App.Dominio\bin\Debug\net6.0\MecanicoConfiable.App.Dominio.dll
+C:\Users\esbv1\OneDrive\Escritorio\C#\Respaldos F\MecanicoConfiable.App.Dominio\bin\Debug\net6.0\MecanicoConfiable.App.Dominio.pdb
+C:\Users\esbv1\OneDrive\Escritorio\C#\Respaldos F\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\MecanicoConfiable.App.Dominio.csproj.AssemblyReference.cache
+C:\Users\esbv1\OneDrive\Escritorio\C#\Respaldos F\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\MecanicoConfiable.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\esbv1\OneDrive\Escritorio\C#\Respaldos F\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\MecanicoConfiable.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\esbv1\OneDrive\Escritorio\C#\Respaldos F\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\MecanicoConfiable.App.Dominio.AssemblyInfo.cs
+C:\Users\esbv1\OneDrive\Escritorio\C#\Respaldos F\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\MecanicoConfiable.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\esbv1\OneDrive\Escritorio\C#\Respaldos F\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\MecanicoConfiable.App.Dominio.dll
+C:\Users\esbv1\OneDrive\Escritorio\C#\Respaldos F\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\refint\MecanicoConfiable.App.Dominio.dll
+C:\Users\esbv1\OneDrive\Escritorio\C#\Respaldos F\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\MecanicoConfiable.App.Dominio.pdb
+C:\Users\esbv1\OneDrive\Escritorio\C#\Respaldos F\MecanicoConfiable.App.Dominio\obj\Debug\net6.0\ref\MecanicoConfiable.App.Dominio.dll
