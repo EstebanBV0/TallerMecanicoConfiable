@@ -10,7 +10,10 @@ namespace MecanicoConfiable.App.Persistencia
         Vehiculo UpdateVehiculo(Vehiculo vehiculoActualizado);
 
         IEnumerable<Vehiculo> GetAll();
+
         IEnumerable<Vehiculo> GetAllForMechanich(int IdMecanico);
+
+        IEnumerable<Vehiculo> GetAllForDueño(int IdDueño);
 
         Vehiculo GetVehiculoId (int IdVehiculo);
 
@@ -18,6 +21,7 @@ namespace MecanicoConfiable.App.Persistencia
 
         Vehiculo AddMechanic (Vehiculo MechanicUpdate);
 
+        Vehiculo AddDueño (Vehiculo DueñoUpdate);
 
         Vehiculo DeleteVehiculo (int IdVehiculo);
 

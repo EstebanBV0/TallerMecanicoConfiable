@@ -35,6 +35,14 @@ namespace MecanicoConfiable.App.Persistencia
 
       }
 
+        IEnumerable<Vehiculo> IRepositorioVehiculo.GetAllForDueño(int IdDueño){
+
+/*          var vehiculos = _appContext.Vehiculos.ToList().Select(x => x.IdMecanico == IdMecanico);
+ */         var dueños = _appContext.Vehiculos.Where(s => s.IdDueño == IdDueño).ToList();
+        return dueños;
+
+      }
+
 
       Vehiculo IRepositorioVehiculo.GetVehiculoId(int IdVehiculo)
         {
@@ -54,6 +62,19 @@ namespace MecanicoConfiable.App.Persistencia
             {
                
                 vehiculo.IdMecanico = vehiculoAct.IdMecanico;
+
+                _appContext.SaveChanges();
+            }
+            return vehiculo;
+        }
+
+         public Vehiculo AddDueño(Vehiculo vehiculoAct)
+        {
+            Vehiculo vehiculo = _appContext.Vehiculos.SingleOrDefault(p => p.Placa == vehiculoAct.Placa);
+            if (vehiculo != null)
+            {
+               
+                vehiculo.IdDueño = vehiculoAct.IdDueño;
 
                 _appContext.SaveChanges();
             }
