@@ -19,7 +19,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">MecanicoConfiable.App.Servicios</a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index">Quienes Somos</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -38,11 +38,12 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Administracion/Administrador">Administrador</a>
                         </li>
-
-
-
                     </ul>
                 </div>
+                   <div class="mr-2">
+                    <partial name= "/Pages/Account/LoginStatus.cshtml"/>
+                        
+                   </div>
             </div>
         </nav>
     </header>

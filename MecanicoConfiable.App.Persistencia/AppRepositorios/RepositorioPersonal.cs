@@ -29,12 +29,12 @@ namespace MecanicoConfiable.App.Persistencia
                     ImagenUrl = "/imagenes/Dueño.png",
                     Link = "/Administracion/Owner/Dueño",
                     LinkList = "/Administracion/Owner/ListDueño"},
-                    new Personal {
+                    /* new Personal {
                     Titulo = "Conductores",
                     Descripcion = "Personal encargado del manejo de los vehiculos",
                     ImagenUrl = "/imagenes/Conductores.png",
                     Link = "/Mechanic/Mecanico",
-                    LinkList = "/Mechanic/Mecanico"},
+                    LinkList = "/Mechanic/Mecanico"}, */
             };
         }
         public IEnumerable<Personal> GetAll()
