@@ -38,6 +38,12 @@ namespace MecanicoConfiable.App.Persistencia
                     ImagenUrl = "/imagenes/Libreta.png",
                     Link = "/Services/car/Vehiculo",
                     LinkList = "/Services/VehiculosAsignados/ListMechanics"},
+                    new Servicio { 
+                    Titulo = "Seguros",
+                    Descripcion = "Seguros asignados a los vehiculos",
+                    ImagenUrl = "/imagenes/poliza.png",
+                    Link = "/Services/car/ListVehiculo",
+                    LinkList = "/Services/SegurosVehiculos/ListSegurosActuales"},
             };
             
 

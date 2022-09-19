@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QMdWKaiE6+NG2TLb5hgpSAzojfEcW4ojimfPGzY1XPY=",
+  "Hash": "/CqyZnPW7TyOMHkY7AzO1AG25b+9tLEnqKJZ28APNvg=",
   "Source": "MecanicoConfiable.App.Servicios",
   "BasePath": "_content/MecanicoConfiable.App.Servicios",
   "Mode": "Default",
@@ -236,6 +236,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagenes\\Mecanico.png"
+    },
+    {
+      "Identity": "C:\\Users\\esbv1\\OneDrive\\Escritorio\\C#\\Respaldos F\\TallerMecanicoConfiable\\MecanicoConfiable.App.Servicios\\wwwroot\\imagenes\\poliza.png",
+      "SourceId": "MecanicoConfiable.App.Servicios",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\esbv1\\OneDrive\\Escritorio\\C#\\Respaldos F\\TallerMecanicoConfiable\\MecanicoConfiable.App.Servicios\\wwwroot\\",
+      "BasePath": "_content/MecanicoConfiable.App.Servicios",
+      "RelativePath": "imagenes/poliza.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\poliza.png"
     },
     {
       "Identity": "C:\\Users\\esbv1\\OneDrive\\Escritorio\\C#\\Respaldos F\\TallerMecanicoConfiable\\MecanicoConfiable.App.Servicios\\wwwroot\\imagenes\\Repuestos.png",

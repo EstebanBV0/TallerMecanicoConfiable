@@ -1,0 +1,41 @@
+﻿@page
+@model ListSegurosActualesModel
+@{
+}
+@{
+    ViewData["Title"] = "Seguros Adquiridos";
+}
+
+<h1>  Seguros adquiridos</h1>
+<a asp-page="/Services/Services" class="btn-defaoult">Volver</a>
+<table class="table mt-5 mb-3">
+
+    <thead>
+      <tr>
+        <th>ID seguro</th>
+        <th>Placa</th>
+        <th>Tipo de seguro</th>
+        <th>Fecha de compra</th>
+        <th>Fecha de inicial</th>
+        <th>Fecha final</th>  
+        <th>Precio</th>  
+      </tr>
+    </thead>
+    @foreach (var seguro in Model.Seguros)
+    {
+        <tr>
+            <td>@seguro.IdSeguro</td>
+            <td>@seguro.Placa</td>
+            <td>@seguro.TipoSeguro</td>
+            <td>@seguro.FechaCompra</td>
+            <td>@seguro.FechaInicial</td>
+            <td>@seguro.FechaFinal</td>
+            <td>@seguro.ValorSeguro</td>
+             <td>
+              <a class="btn btn-primary table-btn" asp-page="./EditNiveles" asp-route-IdSeguro = "@seguro.IdSeguro">Editar</a>
+              <a class="btn btn-primary table-btn" asp-page="./DeleteNiveles" asp-route-IdSeguro = "@seguro.IdSeguro">Eliminar</a>
+            </td> 
+
+        </tr>
+    }
+</table>

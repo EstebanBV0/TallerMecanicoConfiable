@@ -1,0 +1,50 @@
+﻿@page
+@model AddSeguroModel
+
+@{
+    ViewData["Title"] = "Seguros";
+}
+
+<h2>Agregando Seguro  @Model.Vehiculo.Placa  </h2>
+
+<a class="btn btn-primary" asp-page ="/Services/Car/ListVehiculo">Volver</a>
+
+<form method="post" id = "AggSeguro" class="mt-5 mb-3 formuadmin"  >
+
+    <div class="formularioc">
+
+    <div class="mb-3">
+                    <label for="placa" class="form-label">Tipo de Seguro</label>
+
+    <select asp-for="Seguro.TipoSeguro" class="form-control">                
+            
+                    
+                    <option >Soat</option>      
+                    <option >Contractual</option>
+                    <option >Extracontractual</option>                
+        </select>
+    </div>
+        
+        <div class="mb-3">
+            <label for="marca" class="form-label">Fecha de Compra</label>
+            <input asp-for="Seguro.FechaCompra"  class="form-control form-control-sm" id="marca"  />
+        </div>
+      
+        <div class="mb-3">
+            <label for="modelo" class="form-label">Fecha de inicio</label>
+            <input asp-for="Seguro.FechaInicial"  class="form-control form-control-sm" id="modelo"  />
+        </div>        
+        <div class="mb-3">
+            <label for="pasajeros" class="form-label">Fecha Final</label>
+            <input asp-for="Seguro.FechaFinal"  class="form-control form-control-sm" id="pasajeros"  />
+        </div>
+        <div class="mb-3">
+            <label for="paisOrigen" class="form-label">Monto total por el seguro</label>
+            <input asp-for="Seguro.ValorSeguro"  class="form-control form-control-sm" id="paisOrigen"  />
+        </div>
+        <div class="mb-3">
+            <input type="hidden" asp-for="Seguro.IdVehiculo"  class="form-control form-control-sm" id="descripcion" value="@Model.Vehiculo.IdVehiculo"  />
+        </div>
+        <button type="submit" class = "btn btn-primary">Guardar</button>  
+    </div>
+</form>
