@@ -18,6 +18,7 @@ public class VehiculoModel : PageModel
 
     [BindProperty]
     public Vehiculo Vehiculo { get; set; }
+    
       public  IActionResult OnPost( )
         {
             if (!ModelState.IsValid)

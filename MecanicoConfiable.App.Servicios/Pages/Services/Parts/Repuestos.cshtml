@@ -1,0 +1,26 @@
+@page 
+@model RepuestoModel
+@{
+    ViewData["Title"] = "Auxiliar";
+}
+
+
+
+<form method="post" id = "adminAgregarmecanico" class="mt-5 mb-3 formuadmin"  >
+ <h2>Agregando Repuesto </h2>
+ <a asp-page="/Administracion/Administrador" class="btn-defaoult">Volver</a>
+
+    <div class="formularioc">
+        <div class="mt-5 mb-3">
+            <label for="nombre" class="form-label">Nombre del Repuesto</label>
+            <input asp-for="Repuesto.Nombre" type="nombre" class="form-control form-control-sm" id="nombre"  />
+        </div>
+        <div class="mb-3">
+            <label for="valor" class="form-label">Valor</label>
+            <input asp-for="Repuesto.Valor"  class="form-control form-control-sm" id="valor"  />
+        </div>
+                
+          
+            <button type="submit" class = "btn btn-primary">Guardar</button>  
+    </div>
+</form>

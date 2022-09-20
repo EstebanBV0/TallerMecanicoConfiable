@@ -9,7 +9,8 @@ public class EditNiveles : PageModel
 {
     private readonly IRepositorioNiveles _repoNiveles = new RepositorioNiveles(new Persistencia.AppContext());
 
-    
+    private readonly IRepositorioVehiculo _repoVehiculo = new RepositorioVehiculo(new Persistencia.AppContext());
+  
 
     private readonly ILogger<EditNiveles> _logger;
 
@@ -20,10 +21,13 @@ public class EditNiveles : PageModel
 
     [BindProperty]
     public RevisionNiveles Niveles { get; set; }
+    public IEnumerable<Vehiculo> Vehiculo { get; set; }
+
     
       public  IActionResult OnGet( int IdNiveles)
         {
             Niveles = _repoNiveles.GetNivelesId(IdNiveles);
+            Vehiculo = _repoVehiculo.GetAll();
 
             if(Niveles==null){
                 return RedirectToPage("./NotFound");

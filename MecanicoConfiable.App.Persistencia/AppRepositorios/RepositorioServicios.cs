@@ -20,7 +20,7 @@ namespace MecanicoConfiable.App.Persistencia
                     Titulo = "Repuestos",
                     Descripcion = "Todos los repuestos en existencia",
                     ImagenUrl = "/imagenes/Repuestos.png",
-                    Link = "/Mechanic/Mecanico"},
+                    Link = "/Services/Parts/Repuestos"},
                     new Servicio { 
                     Titulo = "Revisión de niveles",
                     Descripcion = "Revisiónes de los vehiculos",

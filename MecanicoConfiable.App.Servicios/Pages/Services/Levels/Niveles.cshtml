@@ -34,8 +34,13 @@
             <input asp-for="Niveles.NivelLiquidDireccion"  class="form-control form-control-sm" id="paisOrigen"  />
         </div>
         <div class="mb-3">
-            <label for="descripcion" class="form-label">Id Vehiculo</label>
-            <input asp-for="Niveles.IdVehiculo"  class="form-control form-control-sm" id="descripcion"  />
+            <label for="descripcion" class="form-label">Placa</label>
+            <select asp-for="Niveles.IdVehiculo" class="form-control">                
+             @foreach (var vehiculo in Model.Vehiculo)
+            {                
+                <option value="@vehiculo.IdVehiculo">@vehiculo.Placa</option>            
+            }
+            </select>
         </div>
         
         <button type="submit" class = "btn btn-primary">Guardar</button>  
