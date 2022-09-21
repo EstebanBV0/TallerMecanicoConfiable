@@ -29,14 +29,13 @@ namespace MecanicoConfiable.App.Servicios
 
           } 
 
-
           if(Credenciales.UserName =="admin" && Credenciales.Password == "123"){
           
            var claims = new List<Claim>{
                         new Claim(ClaimTypes.Name, "admin"),
                         new Claim (ClaimTypes.Email, "admin@mywebsite.com"),
                         new Claim("Department","AD"),
-                        new Claim("Admin","true")
+                        new Claim("admin","true")
                         };
             
             var identity = new ClaimsIdentity (claims, "MyCookieAuth");
@@ -44,9 +43,25 @@ namespace MecanicoConfiable.App.Servicios
 
             await HttpContext.SignInAsync("MyCookieAuth",claimsPrincipal );
           
-          return RedirectToPage("/Administracion/Administrador");
+          return RedirectToPage("/Index"); 
           
-          }
+          }  /* if (Credenciales.UserName =="mec" && Credenciales.Password == "123"){
+          
+           var claims = new List<Claim>{
+                        new Claim(ClaimTypes.Name, "mec"),
+                        new Claim (ClaimTypes.Email, "min@mywebite.com"),
+                        new Claim("Departmentt","AM"),
+                        new Claim("mec","true")
+                        };
+            
+            var identity = new ClaimsIdentity (claims, "MyCookieAuthmec");
+            ClaimsPrincipal claimsPrincipal = new ClaimsPrincipal(identity);
+
+            await HttpContext.SignInAsync("MyCookieAuthmec",claimsPrincipal );
+          
+          return RedirectToPage("/Index");
+          
+          } */ 
           ModelState.AddModelError(string.Empty, "Nombre de usuario o password incorrectos");
 
           return Page();

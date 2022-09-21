@@ -6,7 +6,8 @@ namespace MecanicoConfiable.App.Persistencia
     public interface IRepositorioServicios
 
     {
-         IEnumerable<Servicio> GetAll();
+         IEnumerable<Servicio> GetAllForAux();
+         IEnumerable<Servicio> GetAllForMech();
 
     }
 }

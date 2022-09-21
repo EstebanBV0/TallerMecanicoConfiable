@@ -10,9 +10,21 @@ builder.Services.AddAuthentication("MyCookieAuth").AddCookie("MyCookieAuth",opti
 });
 builder.Services.AddAuthorization(options => {
 
-   options.AddPolicy("AdminOnly",policy => policy.RequireClaim("Admin"));
+   options.AddPolicy("admin",policy => policy.RequireClaim("admin"));
    options.AddPolicy("MustBelongADDepartment",policy => policy.RequireClaim("Department","AD"));
 });
+
+
+/* builder.Services.AddAuthentication("MyCookieAuthmec").AddCookie("MyCookieAuthmec",options => {
+    options.Cookie.Name = "MyCookieAuthmec";
+    options.LoginPath = "/Account/LoginAdm";
+    options.AccessDeniedPath = "/Account/AccessDenied";
+});
+builder.Services.AddAuthorization(options => {
+
+   options.AddPolicy("mec",policy => policy.RequireClaim("mec"));
+   options.AddPolicy("MustBelongADmecepartment",policy => policy.RequireClaim("Departmentt","AM"));
+}); */
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddSingleton <IRepositorioPersonal, RepositorioPersonal>();

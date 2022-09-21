@@ -13,7 +13,8 @@ namespace MecanicoConfiable.App.Servicios
           {
 
          await HttpContext.SignOutAsync("MyCookieAuth");
-         return RedirectToPage("/Index");
+/*          await HttpContext.SignOutAsync("MyCookieAuthmec"); 
+ */         return RedirectToPage("/Index");
 
           } 
 

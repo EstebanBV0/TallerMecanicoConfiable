@@ -1,0 +1,30 @@
+﻿@page
+@model ServicesTecModel
+@{
+}
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            @foreach (var servi in Model.TServicios)
+            {
+                <div class="col">
+                    <div class="card h-100 contenedores_proye">
+                        <img  src= @servi.ImagenUrl class="card-img-top imgproyect" alt="imagen-proyecto" /> 
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">@servi.Titulo</h5>
+                            <p class="card-text">@servi.Descripcion </p>
+                        </div>
+                         <div class="card-footer">
+                       <a class="btn btn-primary "  asp-page="@servi.Link" 
+                       rel="noopener noreferrer">Agregar</a>
+                       <a class="btn btn-primary "  asp-page="@servi.LinkList" 
+                       rel="noopener noreferrer">Listado</a>
+                        </div> 
+
+                    </div>
+                </div>
+            }
+            
+        </div>
+
+    </div>
