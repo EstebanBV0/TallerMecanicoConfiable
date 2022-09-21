@@ -1,0 +1,42 @@
+﻿@page
+@model AddChangePartsModel
+
+@{
+    ViewData["Title"] = "Seguros";
+}
+
+<h2>Cambio de Repuestos Veihculo @Model.Car.Placa </h2>
+
+<a class="btn btn-primary" asp-page ="/Services/Car/ListVehiculo">Volver</a>
+
+<form method="post" id = "AggSeguro" class="mt-5 mb-3 formuadmin"  >
+
+    <div class="formularioc">
+      
+        <div class="mb-3">
+            <input type="hidden" value="@Model.Car.IdVehiculo" asp-for="CambioRepuestos.IdVehiculo"  class="form-control form-control-sm" id="marca"  />
+            
+            <label for="placa" class="form-label">Fecha-Hora</label>
+            <input asp-for="CambioRepuestos.FechaHora"  class="form-control form-control-sm" id="marca"  />
+        </div>
+
+        <label for="placa" class="form-label">Repuesto</label>
+        <select asp-for="CambioRepuestos.IdRepuesto" class="form-control">                
+             @foreach (var rep in Model.Repuesto)
+        {                
+                <option value="@rep.IdRepuesto">@rep.Nombre $ @rep.Valor</option>            
+        }
+        </select>    
+
+                @*<label for="placa" class="form-label">Vehiculo</label>
+        <select asp-for="CambioRepuestos.IdVehiculo" class="form-control">                
+             @foreach (var car in Model.Vehiculo)
+        {                
+                <option value="@car.IdVehiculo">@car.Placa</option>            
+        }
+        </select>*@  
+      
+        
+        <button type="submit" class = "btn btn-primary">Guardar</button>  
+    </div>
+</form>

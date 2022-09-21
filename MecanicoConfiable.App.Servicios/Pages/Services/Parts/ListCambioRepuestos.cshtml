@@ -1,0 +1,36 @@
+@page "{handler?}"
+@model ListCambioRepuestoModel
+@{
+    ViewData["Title"] = "Listado Niveles";
+}
+
+<h1> Historial de Cambio de Repuestos</h1>
+<a asp-page="/Services/Services" class="btn-defaoult">Volver</a>
+<table class="table mt-5 mb-3">
+
+    <thead>
+      <tr>
+        <th>ID Cambio de Repuesto</th>
+        <th>Fecha-Hora</th>
+        <th>ID Repuesto</th>
+        <th>ID Vehiculo</th>
+     
+        
+      </tr>
+    </thead>
+    @foreach (var cambio in Model.Cambios)
+    {
+        <tr>
+            <td>@cambio.IdCambioRepuesto</td>
+            <td>@cambio.FechaHora</td>
+            <td>@cambio.IdRepuesto</td>
+            <td>@cambio.IdVehiculo</td>
+            <td>
+              <a class="btn btn-primary table-btn" asp-page="./EditNiveles" asp-route-IdCambioRepuesto = "@cambio.IdCambioRepuesto">Editar</a>
+              <a class="btn btn-primary table-btn" asp-page="./DeleteNiveles" asp-route-IdCambioRepuesto = "@cambio.IdCambioRepuesto">Eliminar</a>
+              <a class="btn btn-primary table-btn" asp-page="./DetailRevision" asp-route-IdCambioRepuesto = "@cambio.IdCambioRepuesto">Detalle</a>
+            </td>
+
+        </tr>
+    }
+</table>

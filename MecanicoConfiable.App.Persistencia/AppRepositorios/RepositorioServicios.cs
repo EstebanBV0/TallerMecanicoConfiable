@@ -31,7 +31,8 @@ namespace MecanicoConfiable.App.Persistencia
                     Titulo = "Repuestos",
                     Descripcion = "Todos los repuestos en existencia",
                     ImagenUrl = "/imagenes/Repuestos.png",
-                    Link = "/Services/Parts/Repuestos"},
+                    Link = "/Services/Parts/Repuestos",
+                    LinkList = "/Services/Parts/ListRepuestos"},
                     new Servicio { 
                     Titulo = "Revisión de niveles",
                     Descripcion = "Revisiónes de los vehiculos",
@@ -42,7 +43,8 @@ namespace MecanicoConfiable.App.Persistencia
                     Titulo = "Cambio de repuestos",
                     Descripcion = "Registro de cambio de repuestos",
                     ImagenUrl = "/imagenes/CambioRepuestos.png",
-                    Link = "/Mechanic/Mecanico"},
+                    Link = "/Services/Car/ListVehiculo",
+                    LinkList = "/Services/Parts/ListCambioRepuestos"},
                     new Servicio { 
                     Titulo = "Vehiculos Asignados",
                     Descripcion = "Registro de vehiculos asignados para cada mecánico",
