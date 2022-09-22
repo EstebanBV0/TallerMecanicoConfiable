@@ -1,0 +1,15 @@
+﻿@page
+@model DeleVehiculoModel
+@{
+}
+<h1>Borrado de confirmación</h1>
+
+<a class="btn btn-primary" asp-page ="./ListVehiculo">Lista</a>
+
+<div class="alet alet-danger">
+   <h5>Esta seguro que desea borrar el Vehiculo @Model.Vehiculo.Placa</h5>
+    <form method="post">
+      <button type="submit" class="btn btn-danger">Si</button>
+      <a class="btn btn-primary" asp-page ="./ListVehiculo">No</a>
+    </form>
+</div>

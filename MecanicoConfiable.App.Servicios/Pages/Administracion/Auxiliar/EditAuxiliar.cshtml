@@ -1,0 +1,38 @@
+@page 
+@model EditAuxiliarModel
+
+@{
+}
+<h2>Edición Auxiliar  @Model.Auxiliar.Nombre</h2>
+
+<a class="btn btn-primary" asp-page ="/Administracion/Auxiliar/ListAuxiliar">Volver</a>
+
+<form method="post" id = "formuadmin" class="mt-5 mb-3 formuadmin"  >
+    <input type = "hidden" asp-for ="Auxiliar.IdAuxiliar"/>
+    <div class="form-group">
+        <label asp-for ="Auxiliar.Nombre"></label>
+        <input asp-for = "Auxiliar.Nombre" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for ="Auxiliar.Apellido"></label>
+        <input asp-for = "Auxiliar.Apellido" class="form-control">
+    </div>
+        <div class="form-group">
+        <label asp-for ="Auxiliar.NumeroTelefono"></label>
+        <input asp-for = "Auxiliar.NumeroTelefono" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for ="Auxiliar.Ciudad"></label>
+        <input asp-for = "Auxiliar.Ciudad" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for ="Auxiliar.FechaNacimiento"></label>
+        <input asp-for = "Auxiliar.FechaNacimiento" class="form-control">
+    </div>
+        <div class="form-group">
+        <label asp-for ="Auxiliar.Email"></label>
+        <input asp-for = "Auxiliar.Email" class="form-control">
+    </div>
+   <button type="submit" class="btn btn-primary">Guardar</button>
+   
+</form>

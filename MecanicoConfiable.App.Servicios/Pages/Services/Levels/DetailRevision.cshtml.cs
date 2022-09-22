@@ -5,44 +5,34 @@ using MecanicoConfiable.App.Dominio;
 
 namespace MecanicoConfiable.App.Servicios;
 
-public class DetailRevision : PageModel
+public class DetailNivelesModel : PageModel
 {
+    private static IRepositorioNiveles _reponiveles = new RepositorioNiveles(new Persistencia.AppContext());
     private readonly IRepositorioVehiculo _repoVehiculo = new RepositorioVehiculo(new Persistencia.AppContext());
-    private readonly IRepositorioMecanico _repoMecanico = new RepositorioMecanico(new Persistencia.AppContext());
-    private readonly IRepositorioDueño _repoDueño = new RepositorioDueño(new Persistencia.AppContext());
 
-    
+    private readonly ILogger<DetailNivelesModel> _logger;
 
-    private readonly ILogger<DetailRevision> _logger;
-
-    public DetailRevision(ILogger<DetailRevision> logger)
+    public DetailNivelesModel(ILogger<DetailNivelesModel> logger)
     {
         _logger = logger;
     }
 
     [BindProperty]
+    public RevisionNiveles Niveles { get; set; }
     public Vehiculo Vehiculo { get; set; }
-    public Mecanico Mecanico { get; set; }
-    public Dueño Dueño { get; set; }
-    
-      public  IActionResult OnGet( int IdVehiculo)
-        {
-            Vehiculo = _repoVehiculo.GetVehiculoId(IdVehiculo);
-             Mecanico = _repoMecanico.GetMecanicoId(Vehiculo.IdMecanico);
-            Dueño = _repoDueño.GetDueñoId(Vehiculo.IdDueño); 
 
-            if(Vehiculo==null){
+    public  IActionResult OnGet( int IdNiveles)
+        {
+            //Mecanico = _repoMecanico.GetAll();
+            Niveles = _reponiveles.GetNivelesId(IdNiveles);
+            Vehiculo = _repoVehiculo.GetVehiculoId(Niveles.IdVehiculo);
+
+            if(Niveles==null){
                 return RedirectToPage("./NotFound");
             }
             
              return Page();
             
         } 
-        /*public IActionResult OnPost(){
-              Vehiculo  = _repoVehiculo.UpdateVehiculo(Vehiculo);
-              if (Vehiculo == null){
-                return RedirectToPage("./NotFound");
-            }
-              return RedirectToPage("./ListVehiculo"); 
-        }*/
+      
 }

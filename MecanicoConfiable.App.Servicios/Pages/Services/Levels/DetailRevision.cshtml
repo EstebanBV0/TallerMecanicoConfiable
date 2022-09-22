@@ -1,97 +1,64 @@
 @page 
-@model DetailRevision
+@model DetailNivelesModel
 
 @{
 }
-<h2>Revisión de niveles al  Vehiculo con Placa:  @Model.Vehiculo.Placa </h2>
+<h2>Revisión de niveles ID : @Model.Niveles.IdNiveles - Vehiculo  @Model.Vehiculo.Placa </h2>
 <a class="btn-defaoult" asp-page ="./ListNiveles">Volver</a>
 
 <table class="table mt-5 mb-3"> 
-   @*  <thead>
+
+        <thead>
       <tr>
         <th>ID</th>
       </tr>
     </thead>
     <tr>
-        <td>@Model.Vehiculo.IdVehiculo</td>
-    </tr> *@
+        <td>@Model.Niveles.IdNiveles</td>
+    </tr>
+
         <thead>
       <tr>
-        <th>Placa</th>
+        <th>Nivel Aceite</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Niveles.NivelAceite</td>
+    </tr>
+        <thead>
+      <tr>
+        <th>Nivel Liqudo Frenos</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Niveles.NivelLiquidoFrenos</td>
+    </tr>
+
+        <thead>
+      <tr>
+        <th>Nivel Liquido Refrigerante</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Niveles.NivelRefrigerante</td>
+    </tr>
+        <thead>
+      <tr>
+        <th>Nivel Liquido Frenos</th>
+      </tr>
+    </thead>
+    <tr>
+        <td>@Model.Niveles.NivelLiquidDireccion</td>
+    </tr>
+
+        <thead>
+      <tr>
+        <th>Vehiculo</th>
       </tr>
     </thead>
     <tr>
         <td>@Model.Vehiculo.Placa</td>
     </tr>
-
-        <thead>
-      <tr>
-        <th>Tipo</th>
-      </tr>
-    </thead>
-    <tr>
-        <td>@Model.Vehiculo.Tipo</td>
-    </tr>
-        <thead>
-      <tr>
-        <th>Marca</th>
-      </tr>
-    </thead>
-    <tr>
-        <td>@Model.Vehiculo.Marca</td>
-    </tr>
-
-        <thead>
-      <tr>
-        <th>Modelo</th>
-      </tr>
-    </thead>
-    <tr>
-        <td>@Model.Vehiculo.Modelo</td>
-    </tr>
-        <thead>
-      <tr>
-        <th>Pasajeros</th>
-      </tr>
-    </thead>
-    <tr>
-        <td>@Model.Vehiculo.NumeroPasajeros</td>
-    </tr>
-
-        <thead>
-      <tr>
-        <th>Pais de Origen</th>
-      </tr>
-    </thead>
-    <tr>
-        <td>@Model.Vehiculo.PaisOrigen</td>
-    </tr>
-        <thead>
-      <tr>
-        <th>Descripcion Adicional</th>
-      </tr>
-    </thead>
-    <tr>
-        <td>@Model.Vehiculo.DescripcionAdicional</td>
-    </tr>
-
-        <thead>
-      <tr>
-        <th>Dueño</th>
-      </tr>
-    </thead>
-   <tr>
-        <td>@Model.Dueño.Nombre</td>
-    </tr> 
-
-    <thead>
-      <tr>
-        <th>Mecanico</th>
-      </tr>
-    </thead>
-    <tr>
-        <td>@Model.Mecanico.Nombre</td>
-    </tr> 
-
+ 
 
 </table>

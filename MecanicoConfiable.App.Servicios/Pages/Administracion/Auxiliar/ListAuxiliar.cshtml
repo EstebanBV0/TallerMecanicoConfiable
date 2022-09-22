@@ -4,7 +4,7 @@
     ViewData["Title"] = "Listaauxiliar";
 }
 
-<h1>Lista Auxliares</h1>
+<h1>Lista Auxiliares</h1>
 
  <a asp-page="/Administracion/Administrador" class="btn-defaoult">Volver</a>
 
@@ -32,8 +32,9 @@
             <!--<td>auxiliar.Direccion</td>-->
             <!--<td>auxiliar.FechaNacimiento</td>-->
             <td>
-              <a class="btn btn-primary table-btn" asp-page="./EditAuxliar" asp-route-IdAuxiliar = "@auxiliar.IdAuxiliar">Editar</a>
+              <a class="btn btn-primary table-btn" asp-page="./EditAuxiliar" asp-route-IdAuxiliar = "@auxiliar.IdAuxiliar">Editar</a>
               <a class="btn btn-primary table-btn" asp-page="./DeleteAuxiliar" asp-route-IdAuxiliar = "@auxiliar.IdAuxiliar">Eliminar</a>
+              <a class="btn btn-primary table-btn" asp-page="./DetailAuxiliar" asp-route-IdAuxiliar = "@auxiliar.IdAuxiliar">Detalle</a>
 
             </td>
 

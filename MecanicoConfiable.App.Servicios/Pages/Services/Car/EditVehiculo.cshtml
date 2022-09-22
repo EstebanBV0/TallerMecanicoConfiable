@@ -1,0 +1,69 @@
+@page 
+@model EditCarModel
+
+@{
+}
+<h2>Edición Vehiculo:  @Model.Vehiculo.Placa</h2>
+
+<a class="btn btn-primary" asp-page ="/Services/Car/ListVehiculo">Volver</a>
+
+<form method="post" id = "formuadmin" class="mt-5 mb-3 formuadmin"  >
+    <input type = "hidden" asp-for ="Vehiculo.IdVehiculo"/>
+    <div class="form-group">
+        <label asp-for ="Vehiculo.Placa"></label>
+        <input asp-for = "Vehiculo.Placa" class="form-control">
+    </div>
+    <div class="mb-3">
+            <label for="Tipo" class="form-label"> Tipo </label>
+            <select asp-for="Vehiculo.Tipo" class="form-control">
+                <option value="" disabled="" selected=""></option>
+                <option value="SEDAN">SEDAN</option>
+                <option value="HATCHBACK">HATCHBACK</option>
+                <option value="SUB">SUB</option>
+                <option value="TODO TERRENO">TODO TERRENO</option>
+                <option value="SPORT">SPORT</option>
+                <option value="FAMILIAR">FAMILIAR</option>
+            </select>
+        </div>
+        <div class="form-group">
+        <label asp-for ="Vehiculo.Marca"></label>
+        <input asp-for = "Vehiculo.Marca" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for ="Vehiculo.Modelo"></label>
+        <input asp-for = "Vehiculo.Modelo" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for ="Vehiculo.NumeroPasajeros"></label>
+        <input asp-for = "Vehiculo.NumeroPasajeros" class="form-control">
+    </div>
+        <div class="form-group">
+        <label asp-for ="Vehiculo.PaisOrigen"></label>
+        <input asp-for = "Vehiculo.PaisOrigen" class="form-control">
+    </div>
+      
+        <div class="form-group">
+        <label asp-for ="Vehiculo.DescripcionAdicional"></label>
+        <input asp-for = "Vehiculo.DescripcionAdicional" class="form-control">
+    </div>
+
+
+        <label asp-for ="Vehiculo.IdDueño">Mecanico</label>    
+        <select asp-for="Vehiculo.IdDueño" class="form-control">                
+             @foreach (var Dueño in Model.Dueño)
+         {                
+                <option value="@Dueño.IdDueño">@Dueño.Nombre</option>            
+         }
+        </select>
+
+
+        <label asp-for ="Vehiculo.IdMecanico">Mecanico</label>
+        <select asp-for="Vehiculo.IdMecanico" class="form-control">                
+             @foreach (var Mecanico in Model.Mecanico)
+        {                
+                <option value="@Mecanico.IdMecanico">@Mecanico.Nombre</option>            
+        }
+        </select>
+   <button type="submit" class="btn btn-primary">Guardar</button>
+   
+</form>
