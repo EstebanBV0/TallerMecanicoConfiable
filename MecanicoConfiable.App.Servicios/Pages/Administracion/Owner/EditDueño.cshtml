@@ -6,7 +6,7 @@
 <h2>Edición Propietario @Model.Dueño.Nombre</h2>
 <a class="btn-defaoult" asp-page ="./ListDueño">Volver</a>
 
-<form method="post">
+<form method="post" id = "formuadmin" class="mt-5 mb-3 formuadmin" >
     <input type = "hidden" asp-for ="Dueño.IdDueño"/>
     <div class="form-group">
         <label asp-for ="Dueño.Nombre"></label>

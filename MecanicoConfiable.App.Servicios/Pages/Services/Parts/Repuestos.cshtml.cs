@@ -25,7 +25,7 @@ public class RepuestoModel : PageModel
                 return Page();
             }
             if (Repuesto != null) _repoRepuesto.AddRepuesto(Repuesto);
-            return RedirectToPage("../Services");
+            return RedirectToPage("../ServicesTec");
             
         } 
 }

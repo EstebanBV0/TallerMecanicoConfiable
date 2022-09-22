@@ -5,10 +5,16 @@ a.navbar-brand[b-krakwc6axq] {
   white-space: normal;
   text-align: center;
   word-break: break-all;
+  color: #0077cc;
+
 }
 
 a[b-krakwc6axq] {
   color: #0077cc;
+}
+.pruebas2 ul li a[b-krakwc6axq]{
+  color: #0077cc;
+
 }
 
 .btn-primary[b-krakwc6axq] {
@@ -18,7 +24,7 @@ a[b-krakwc6axq] {
 }
 
 .nav-pills .nav-link.active[b-krakwc6axq], .nav-pills .show > .nav-link[b-krakwc6axq] {
-  color: #fff;
+  color: black;
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
