@@ -1,0 +1,15 @@
+﻿@page
+@model DeleteCambioRepuestoModel
+@{
+}
+<h1>Borrado de confirmación</h1>
+
+<a class="btn btn-primary" asp-page ="./ListCambioRepuestos">Lista</a>
+
+<div class="alet alet-danger">
+   <h5>Esta seguro que desea borrar El Registro # @Model.CambioRepuesto.IdCambioRepuesto</h5>
+    <form method="post">
+      <button type="submit" class="btn btn-danger">Si</button>
+      <a class="btn btn-primary" asp-page ="./ListCambioRepuestos">No</a>
+    </form>
+</div>

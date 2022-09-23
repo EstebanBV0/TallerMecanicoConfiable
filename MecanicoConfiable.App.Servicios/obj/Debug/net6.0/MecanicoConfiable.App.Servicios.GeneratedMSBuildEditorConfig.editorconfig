@@ -167,6 +167,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcTGV2ZWxzXE5pdmVsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Parts/DeleteCambioRepuesto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcUGFydHNcRGVsZXRlQ2FtYmlvUmVwdWVzdG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Parts/DeleteRepuesto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcUGFydHNcRGVsZXRlUmVwdWVzdG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Parts/EditCambioRepuesto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcUGFydHNcRWRpdENhbWJpb1JlcHVlc3RvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Parts/EditRepuesto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcUGFydHNcRWRpdFJlcHVlc3RvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Parts/ListCambioRepuestos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcUGFydHNcTGlzdENhbWJpb1JlcHVlc3Rvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -177,6 +193,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/Parts/Repuestos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcUGFydHNcUmVwdWVzdG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/SegurosVehiculos/DeleteSeguro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcU2VndXJvc1ZlaGljdWxvc1xEZWxldGVTZWd1cm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/SegurosVehiculos/EditSeguro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcU2VndXJvc1ZlaGljdWxvc1xFZGl0U2VndXJvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/C\#/TALLER/TallerMecanicoConfiable/MecanicoConfiable.App.Servicios/Pages/Services/SegurosVehiculos/ListSegurosActuales.cshtml]

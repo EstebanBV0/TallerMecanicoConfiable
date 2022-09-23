@@ -32,8 +32,8 @@
             <td>@seguro.FechaFinal</td>
             <td>@seguro.ValorSeguro</td>
              <td>
-              <a class="btn btn-primary table-btn" asp-page="./EditNiveles" asp-route-IdSeguro = "@seguro.IdSeguro">Editar</a>
-              <a class="btn btn-primary table-btn" asp-page="./DeleteNiveles" asp-route-IdSeguro = "@seguro.IdSeguro">Eliminar</a>
+              <a class="btn btn-primary table-btn" asp-page="./EditSeguro" asp-route-IdSeguro = "@seguro.IdSeguro">Editar</a>
+              <a class="btn btn-danger" asp-page="./DeleteSeguro" asp-route-IdSeguro = "@seguro.IdSeguro">Eliminar</a>
             </td> 
 
         </tr>

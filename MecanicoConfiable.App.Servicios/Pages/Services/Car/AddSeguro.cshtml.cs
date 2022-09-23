@@ -39,7 +39,7 @@ namespace MecanicoConfiable.App.Servicios
               if (Seguro == null){
                 return RedirectToPage("./ListVehiculo");
             }
-              return RedirectToPage("./ListVehiculo"); 
+              return RedirectToPage("/Services/SegurosVehiculos/ListSegurosActuales"); 
         }
     }
 }

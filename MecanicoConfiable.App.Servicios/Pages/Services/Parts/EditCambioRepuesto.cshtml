@@ -1,0 +1,43 @@
+@page 
+@model EditCambioRepuesto
+
+@{
+}
+<h2>Edición del Cambio de Repuesto con ID: @Model.CambioRepuesto.IdCambioRepuesto</h2>
+
+<a class="btn btn-primary" asp-page ="./ListCambioRepuestos">Volver</a>
+
+<form method="post" id = "formuadmin" class="mt-5 mb-3 formuadmin" >
+    <input type = "hidden" asp-for ="CambioRepuesto.IdCambioRepuesto"/>
+    <div class="form-group">
+        <label asp-for ="CambioRepuesto.FechaHora"></label>
+        <input asp-for = "CambioRepuesto.FechaHora" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="descripcion" class="form-label">Repuesto</label>
+            <select asp-for="CambioRepuesto.IdRepuesto" class="form-control">                
+             @foreach (var repuesto in Model.Repuesto)
+            {                
+                <option value="@repuesto.IdRepuesto">@repuesto.Nombre</option>            
+            }
+            </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="descripcion" class="form-label">Vehiculo</label>
+            <select asp-for="CambioRepuesto.IdVehiculo" class="form-control">                
+             @foreach (var vehiculo in Model.Vehiculo)
+            {                
+                <option value="@vehiculo.IdVehiculo">@vehiculo.Placa</option>            
+            }
+            </select>
+    </div>
+
+    
+
+
+       
+   <button type="submit" class="btn btn-primary">Guardar</button>
+   
+</form>

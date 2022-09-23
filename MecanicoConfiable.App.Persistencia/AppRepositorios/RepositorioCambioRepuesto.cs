@@ -53,17 +53,17 @@ namespace MecanicoConfiable.App.Persistencia
 
     public CambioRepuesto UpdateCambioRepuesto(CambioRepuesto CambioRepuestoActualizado)
         {
-            CambioRepuesto CSact = _appContext.CambioRepuestos.SingleOrDefault(p => p.IdCambioRepuesto == CambioRepuestoActualizado.IdCambioRepuesto);
-            if (CSact != null)
+            CambioRepuesto CRact = _appContext.CambioRepuestos.SingleOrDefault(p => p.IdCambioRepuesto == CambioRepuestoActualizado.IdCambioRepuesto);
+            if (CRact != null)
             {
-                CSact.FechaHora = CambioRepuestoActualizado.FechaHora;
-                CSact.IdRepuesto = CambioRepuestoActualizado.IdRepuesto;
-                CSact.IdVehiculo = CambioRepuestoActualizado.IdVehiculo;
+                CRact.FechaHora = CambioRepuestoActualizado.FechaHora;
+                CRact.IdRepuesto = CambioRepuestoActualizado.IdRepuesto;
+                CRact.IdVehiculo = CambioRepuestoActualizado.IdVehiculo;
 
                   
                 _appContext.SaveChanges();
             }
-            return CSact;
+            return CRact;
         }
 
     public CambioRepuesto DeleteCambioRepuesto(int IdCambioRepuesto)

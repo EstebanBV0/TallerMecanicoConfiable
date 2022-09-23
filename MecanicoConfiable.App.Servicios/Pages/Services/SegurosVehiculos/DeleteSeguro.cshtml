@@ -1,0 +1,15 @@
+﻿@page
+@model DeleteSeguroModel
+@{
+}
+<h1>Borrado de confirmación</h1>
+
+<a class="btn btn-primary" asp-page ="./ListSegurosActuales">Lista</a>
+
+<div class="alet alet-danger">
+   <h5>Esta seguro que desea borrar el Seguro @Model.Seguro.TipoSeguro</h5>
+    <form method="post">
+      <button type="submit" class="btn btn-danger">Si</button>
+      <a class="btn btn-primary" asp-page ="/Services/SegurosVehiculos/ListSegurosActuales">No</a>
+    </form>
+</div>

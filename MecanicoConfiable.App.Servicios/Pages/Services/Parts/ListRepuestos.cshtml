@@ -24,9 +24,9 @@
             <td>@parts.Nombre</td>
             <td>@parts.Valor</td>
             <td>
-              <a class="btn btn-primary table-btn" asp-page="./EditNiveles" asp-route-IdRepuesto = "@parts.IdRepuesto">Editar</a>
-              <a class="btn btn-primary table-btn" asp-page="./DeleteNiveles" asp-route-IdRepuesto = "@parts.IdRepuesto">Eliminar</a>
-              <a class="btn btn-primary table-btn" asp-page="./DetailRevision" asp-route-IdRepuesto = "@parts.IdRepuesto">Detalle</a>
+              <a class="btn btn-primary table-btn" asp-page="./EditRepuesto" asp-route-IdRepuesto = "@parts.IdRepuesto">Editar</a>
+              <a class="btn btn-danger" asp-page="./DeleteRepuesto" asp-route-IdRepuesto = "@parts.IdRepuesto">Eliminar</a>
+              
             </td>
 
         </tr>
