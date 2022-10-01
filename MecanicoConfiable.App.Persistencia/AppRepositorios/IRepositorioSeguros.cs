@@ -12,6 +12,7 @@ namespace MecanicoConfiable.App.Persistencia
         IEnumerable<ListSegurosFull> GetAll();
 /*         IEnumerable<Seguro> GetAllForVehiculo(int IdVehiculo);
  */
+        //IEnumerable<Seguro> GetThisSeg(string Seg);
         Seguro GetSegurosId (int IdSeguro);
 
         //RevisionNiveles GetVehiculoPlaca (string Placa);

@@ -39,6 +39,13 @@ namespace MecanicoConfiable.App.Persistencia
 
       }
 
+     /* IEnumerable<Seguro> IRepositorioSeguros.GetThisSeg(string filter )
+      {
+        //string filter = "x";
+        return _appContext.Seguros.Where(p => p.Vehiculo.Any(s=> s.Placa==filter)).ToList();
+        //return thisMec;
+      }*/
+
       Seguro IRepositorioSeguros.GetSegurosId(int IdSeguro)
         {
         return _appContext.Seguros.SingleOrDefault(p => p.IdSeguro == IdSeguro);

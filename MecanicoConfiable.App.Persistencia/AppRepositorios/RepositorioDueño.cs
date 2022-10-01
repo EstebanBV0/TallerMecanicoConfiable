@@ -26,6 +26,12 @@ namespace MecanicoConfiable.App.Persistencia
         return _appContext.Dueños;
 
       }
+      IEnumerable<Dueño> IRepositorioDueño.GetThisOwner(string filter )
+      {
+        //string filter = "x";
+        var thisOwner = _appContext.Dueños.Where(p => p.Nombre.Contains( filter) ).ToList();
+        return thisOwner;
+      }
       Dueño IRepositorioDueño.GetDueñoId(int IdDueño)
         {
         return _appContext.Dueños.SingleOrDefault(p => p.IdDueño == IdDueño);

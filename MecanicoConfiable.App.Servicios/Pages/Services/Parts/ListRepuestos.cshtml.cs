@@ -17,9 +17,19 @@ public class ListPartsModel : PageModel
     }
 
     [BindProperty]
+    
     public IEnumerable<Repuesto> Repuestos { get; set; }
-      public  void OnGet( )
+    public string filter= null;
+      public  void OnGet( string part)
         {
-         Repuestos = _repoRepuestos.GetAll();
+          filter=part;
+          if(filter==null)
+          {
+            Repuestos = _repoRepuestos.GetAll();
+          }else
+          {
+            Repuestos = _repoRepuestos.GetThisRep(filter);
+          }
+         
         } 
 }

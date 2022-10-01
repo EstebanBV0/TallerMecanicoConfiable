@@ -24,7 +24,13 @@ namespace MecanicoConfiable.App.Persistencia
      IEnumerable<Vehiculo> IRepositorioVehiculo.GetAll(){
 
         return _appContext.Vehiculos;
+      }
 
+      IEnumerable<Vehiculo> IRepositorioVehiculo.GetThisCar(string filter )
+      {
+        //string filter = "x";
+        var thisCar = _appContext.Vehiculos.Where(p => p.Placa.Contains( filter) ).ToList();
+        return thisCar;
       }
 
       IEnumerable<Vehiculo> IRepositorioVehiculo.GetAllForMechanich(int IdMecanico){

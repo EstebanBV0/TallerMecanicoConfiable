@@ -26,6 +26,15 @@ namespace MecanicoConfiable.App.Persistencia
         return _appContext.Repuestos;
 
       }
+
+      IEnumerable<Repuesto> IRepositorioRepuesto.GetThisRep(string filter)
+      {
+        //string filter = "x";
+        var thisRep = _appContext.Repuestos.Where(p => p.Nombre.Contains( filter) ).ToList();
+        return thisRep;
+      }
+
+      
       Repuesto IRepositorioRepuesto.GetRepuestoId(int IdRepuesto)
         {
         return _appContext.Repuestos.SingleOrDefault(p => p.IdRepuesto == IdRepuesto);

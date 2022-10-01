@@ -10,6 +10,7 @@ namespace MecanicoConfiable.App.Persistencia
         Mecanico UpdateMecanico(Mecanico mecanicoactualizado);
 
         IEnumerable<Mecanico> GetAll();
+        IEnumerable<Mecanico> GetThisMec(string Mec);
 
         Mecanico GetMecanicoId (int IdMecanico);
 

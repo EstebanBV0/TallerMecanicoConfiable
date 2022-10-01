@@ -10,6 +10,7 @@ namespace MecanicoConfiable.App.Persistencia
         Dueño UpdateDueño(Dueño dueño);
 
         IEnumerable<Dueño> GetAll();
+        IEnumerable<Dueño> GetThisOwner(string Owner);
 
         Dueño GetDueñoId (int IdDueño);
 

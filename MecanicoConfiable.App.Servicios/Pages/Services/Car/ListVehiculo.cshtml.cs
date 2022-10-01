@@ -18,8 +18,26 @@ public class ListVehiculoModel : PageModel
 
     [BindProperty]
     public IEnumerable<Vehiculo> Vehiculos { get; set; }
-      public  void OnGet( )
+    public string filter = null;
+     /* public  void OnGet( )
         {
          Vehiculos = _repoVehiculo.GetAll();
+         //Vehiculos = _repoVehiculo.GetThisCar();
+        } */
+
+      public  IActionResult OnGet( string Pla)
+        {            
+            filter = Pla;
+
+            if(Pla==null){
+                 Vehiculos = _repoVehiculo.GetAll();
+            }else
+            {              
+              Vehiculos = _repoVehiculo.GetThisCar(Pla);
+            }            
+             return Page();            
         } 
+
+       
+ 
 }

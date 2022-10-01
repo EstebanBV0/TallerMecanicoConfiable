@@ -21,8 +21,18 @@ public class ListMecanicosModel : PageModel
 
     [BindProperty]
     public IEnumerable<Mecanico> Mecanicos { get; set; }
-      public  void OnGet( )
+    public string filter = null;
+
+      public  void OnGet( string mec)
         {
-         Mecanicos = _repoMecanico.GetAll();
+          filter=mec;
+          if(filter==null)
+          {
+            Mecanicos = _repoMecanico.GetAll();
+          }else
+          {
+            Mecanicos = _repoMecanico.GetThisMec(filter);
+          }
+         
         } 
 }

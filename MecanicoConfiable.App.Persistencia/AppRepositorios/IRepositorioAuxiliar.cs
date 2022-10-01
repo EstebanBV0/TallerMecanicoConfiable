@@ -10,6 +10,7 @@ namespace MecanicoConfiable.App.Persistencia
         Auxiliar UpdateAuxiliar(Auxiliar auxiliar);
 
         IEnumerable<Auxiliar> GetAll();
+        IEnumerable<Auxiliar> GetThisAux(string Aux);
 
         Auxiliar GetAuxiliarId (int IdAuxiliar);
 

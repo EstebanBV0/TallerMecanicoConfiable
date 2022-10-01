@@ -10,6 +10,8 @@ namespace MecanicoConfiable.App.Persistencia
         Repuesto UpdateRepuesto(Repuesto repuesto);
 
         IEnumerable<Repuesto> GetAll();
+        
+        IEnumerable<Repuesto> GetThisRep(string Rep);
 
         Repuesto GetRepuestoId (int IdRepuesto);
 

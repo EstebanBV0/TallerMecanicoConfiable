@@ -26,6 +26,13 @@ namespace MecanicoConfiable.App.Persistencia
         return _appContext.Auxiliares;
 
       }
+
+      IEnumerable<Auxiliar> IRepositorioAuxiliar.GetThisAux(string filter )
+      {
+        //string filter = "x";
+        var thisAux = _appContext.Auxiliares.Where(p => p.Nombre.Contains( filter) ).ToList();
+        return thisAux;
+      }
       Auxiliar IRepositorioAuxiliar.GetAuxiliarId(int IdAuxiliar)
         {
         return _appContext.Auxiliares.SingleOrDefault(p => p.IdAuxiliar == IdAuxiliar);

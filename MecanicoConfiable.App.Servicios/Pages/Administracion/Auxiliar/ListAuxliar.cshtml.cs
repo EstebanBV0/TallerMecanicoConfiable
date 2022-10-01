@@ -18,8 +18,17 @@ public class ListAuxiliarModel : PageModel
 
     [BindProperty]
     public IEnumerable<Auxiliar> Auxiliares { get; set; }
-      public  void OnGet( )
+    public string filter = null;
+      public  void OnGet( string aux)
         {
-         Auxiliares = _repoAuxiliar.GetAll();
+          filter= aux;
+          if(filter==null)
+          {
+            Auxiliares = _repoAuxiliar.GetAll();
+          }else
+          {
+            Auxiliares = _repoAuxiliar.GetThisAux(aux);
+          }
+         
         } 
 }

@@ -18,8 +18,17 @@ public class ListDueñosModel : PageModel
 
     [BindProperty]
     public IEnumerable<Dueño> Dueños { get; set; }
-      public  void OnGet( )
+    public string filter = null;
+      public  void OnGet( string Owner)
         {
-         Dueños = _repoDueño.GetAll();
+          filter= Owner;
+          if(filter==null)
+          {
+             Dueños = _repoDueño.GetAll();
+          }else
+          {
+             Dueños = _repoDueño.GetThisOwner(filter);
+          }
+        
         } 
 }
